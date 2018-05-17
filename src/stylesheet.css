@@ -173,6 +173,8 @@ body{
   width: 500px;
   margin: 0 auto 10px;
   border-radius: 2px;
+    display: flex;
+  justify-content: center;
 
 }
 
@@ -195,10 +197,9 @@ body{
 
 .forms input[type=submit] {
   width: 150px;
-  display: block;
   margin-bottom: 10px;
-  align-content: center;
-  position: relative;height: 44px;
+  position: relative;
+  height: 44px;
   font-size: 16px;
   font-weight: bold;
   background: #ffa64d;
