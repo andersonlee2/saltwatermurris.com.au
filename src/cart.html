@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/flexboxgrid.css">
+	<link rel="stylesheet" href="css/fontawesome-all.css">
+	<link rel="stylesheet" href="css/stylesheet.css">
+</head>
+
+<body>
+	<!--Header-->
+	<header id="main-header">
+		<div class="container">
+			
+			<div class="row center-xs center-sm center-md center-lg middle-xs middle-sm middle-md top-lg">
+
+				<div class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
+					<a href='index.html'><img id='header-logo' src="images/logo-h.png" alt="Home">	</a>	
+				</div>
+				<div class="col-xs-12 col-sm-7 col-md-7 col-lg-7"  style='background-color: orange;   background: url("images/navbar.svg") no-repeat; background-size: 100%; border-bottom: 200px transparent solid;' >
+					<div class="row ">
+						<nav id='navbar' >
+							<ul>
+								<li ><a href='paintings.html'>Store</a></li>
+								<li><a href='artistspage.html'>Artist</a></li>
+								<li><a href='culture.html'>Culture</a></li>
+								<li class='current'><a href='cart.html'>Cart</a></li>
+								<li ><a href='userlogin.html'>Login</a></li>
+							</ul>
+						</nav>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- Cart Section -->
+	<section id="cart">
+		<article> 
+			<img src="images\swm-photos\turtle.jpg">
+			<p class='product-name'>South Passage Bar</p>
+			<p class='dimension lowercase'>120 x 90cm</p>
+			<div class='quantity'>
+			  <select>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+				<option value="9">9</option>
+				<option value="10">10</option>
+			  </select>
+			</div>
+			<p class='price'>AU $235</p>
+			<p><i class="fa fa-trash" aria-hidden="true"></i></p>
+		</article>
+		<article> 
+			<img src="images\swm-photos\turtle.jpg">
+			<p class='product-name'>Stoneware Pendants</p>
+			<p class='dimension lowercase' >8 x 8cm</p>
+			<div class='quantity'>
+			  <select>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+				<option value="9">9</option>
+				<option value="10">10</option>
+			  </select>
+			</div>
+			<p class='price'>AU $15</p>
+			<p><i class="fa fa-trash" aria-hidden="true"></i></p>
+		</article>
+		<article> 
+			<img src="images\swm-photos\turtle.jpg">
+			<p class='product-name'>Turtles</p>
+			<p class='dimension'>90 x 90cm</p>
+			<div class='quantity'>
+			  <select>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+				<option value="9">9</option>
+				<option value="10">10</option>
+			  </select>
+			</div>
+			<p class='price'>AU $200</p>
+			<p><i class="fa fa-trash" aria-hidden="true"></i></p>
+		</article>
+		<article style='display: flex;justify-content:flex-end; border-bottom: none'>
+			<p > Total:  </p>
+			<p style='padding: 1rem 90px 0 1rem;'>AU $450</p>
+		</article>
+
+		<div id='buttons-container'>
+			<button >Pay with Card</button>
+			<button >Pay with PayPal</button>
+		</div>
+	</section>
+
+</body>
+</html>
+
+<style>
+
+
+sup{
+	letter-spacing: normal;
+	font-size: 10px;
+}
+section{
+	width: 950px;
+	border-radius: 15px;
+	background-color: white;
+	padding: 2rem 2rem;
+	margin: 2rem auto;
+	border: goldenrod 1px dotted; 
+}
+article {
+	border-bottom: goldenrod dotted 1px;
+	overflow: auto;
+}
+p{
+	float:left;
+	padding-top: 1.1rem;
+	padding-right: 2rem;
+	text-align:left;
+}
+img{
+	box-sizing: content-box;
+	width: 107px; height: 60px; 
+	overflow: hidden;
+	padding-right: 2rem;
+	display: block;
+	float:left;
+}
+.product-name{
+	width: 35%;
+}
+.dimension{
+	width: 17%;
+	text-align: left;
+}
+.quantity{
+	width: 3rem;
+	float:left;
+	margin-top: 1rem;
+	margin-right: 1rem;
+	margin-left: 1rem;
+	
+}
+select{
+	font-size: 16px;
+}
+.price{
+	width: 17%;
+	text-align: right;
+}
+button {
+    background-color: papayawhip; 
+    color: black; 
+    border: 2px solid goldenrod;
+    padding: 16px 32px;
+    font-size: 16px;
+    margin: 2rem 2rem 1.5rem;
+    transition-duration: 0.2s;
+    cursor: pointer;
+}
+button:hover {
+    background-color: goldenrod;
+    color: white;
+}
+#buttons-container{
+	display: flex;
+	justify-content: center;
+	border: none;
+}
+.lowercase{
+	text-transform: lowercase;
+}
+</style>

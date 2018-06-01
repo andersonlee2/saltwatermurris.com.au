@@ -1,105 +1,132 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,100);
+
 body{
-  font-family: 'Roboto', sans-serif;
-}
-.header {
-  text-align: center;
-  height: 332px;
-  background-color: #60A2AE;
-  border-radius: 10px;
+	background:url('../images/swm-photos/ult.jpg') no-repeat center center;	 
+	font-family: 'Roboto', sans-serif;
+	font-size:17px;
+	line-height:1.5em;
+	margin:0;
+	padding:0;
 }
 
-.navbar {
-    overflow: hidden;
-    background-color: #7FCDDB;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    padding-left: 48px;
-    padding: 12px;
-    width:auto;
-    height: 32px;
-    border-radius: 10px;
-    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-    font-family: inherit;
-    font-size: 10px;
-    background: linear-gradient(#60A2AE, #7FCDDB);
+p{
+	padding: 0px 20px;
+}
+
+img{
+	width:100%;
+}
+
+.container{
+	margin: auto;
+	border: goldenrod 0px solid;
+	/* background-color: rgb(200,200,255, 0.9); */
 }
 
 
-.navbar a {
-    float: left;
-    font-size: 18px;
-    color: white;
-    text-align: center;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    padding-left: 70px;
-    padding-right: 70px;
-    text-decoration: none;
-    background: linear-gradient(#60A2AE, #7FCDDB);
+/* MAIN-HEADER */
+#main-header {
+	/* background:url('../images/swm-photos/ult.jpg') no-repeat center center;	 */
+
 }
 
-.dropdown {
-    float: left;
-    overflow: hidden;
+#main-header .row{
+
 }
 
-.dropdown .dropbtn {
-    font-size: 18px;
-    border: none;
-    outline: none;
-    color: white;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    padding-left: 70px;
-    padding-right: 70px;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
-    background: linear-gradient(#60A2AE, #7FCDDB);
+#main-header .container {
+
+	box-sizing: border-box;
+
+
+
 }
 
-.navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: #255E69;
-    border-radius: 12px;
-    transition-duration: 0.2s;
-    transform-origin: right;
-    background: linear-gradient(#7FCDDB, #60A2AE);
+#header-logo{
+	background-color: rgb(95,170,166, 0.9);
+	box-sizing:border-box;
+	padding: 0 90px 0px 30px;
+	border-right: 10px solid #B9CD4A;
 }
 
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #60A2AE;
-    background: linear-gradient(#60A2AE, #7FCDDB);
-    border-radius: 12px;
-    min-width: 160px;
-    width: 205px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+#header-nav  img{
+	display: block;
+	position: relative;
+	z-index: 1;
+	top: -300px;
+	
 }
 
-.dropdown-content a {
-    float: none;
-    color: white;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-    font-size: 18px;
-    border-radius: 12px;
+#navbar{
+  text-transform:uppercase;
+  /* background:url('../images/navbar.svg') no-repeat top  ;  */
+  /* background-size: 100%; */
+  /* background-color: transparent; */
+  /* padding: 0px 0px 200px 10px; */
+
+  display: block;
+  position: relative;
+  z-index:100;
 }
 
-.dropdown-content a:hover {
-    background-color: #60A2AE;
-    transition-duration: 1s;
-    transform-origin: right;
+#header-nav ul {
+	list-style: none
 }
 
-.dropdown:hover .dropdown-content {
-    background-color: #60A2AE;
-    display: block;
-    transition-delay: 0.5s;
+#navbar li {
+	display:inline;
+	padding-right:60px;
+	list-style:none;
+}
+
+#navbar a{
+	font-size: 20px;
+	text-decoration:none;
+	color:black;
+}
+
+#navbar li.current a, #navbar a:hover{
+  color:#56a79a;
+  border-bottom: 3px solid #56a79a;
+  padding-bottom:3px;
+}
+
+
+/*   INDEX PAGE
+
+ COPYWRITING*/
+#copywriting p{
+	font-size: 24px;
+
+}
+
+#copywriting img{
+
+}
+
+#copywriting .container {
+	/* width: 900px; */
+	padding: 50px 100px;
+	box-sizing: border-box;
+	/* border-radius: 20px; */
+	/* background-color: rgb(200,200,255, 0.9); */
+}
+
+.emphasis {
+	color: black;
+	background-color: rgb(200,200,255, 0.9);
+	padding: 0px 50px;
+}
+
+.emphasis:first-child {
+	padding-top: 60px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+.emphasis:last-child {
+	padding-bottom: 60px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
 }
 
 

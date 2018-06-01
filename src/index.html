@@ -1,100 +1,91 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="stylesheet.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/flexboxgrid.css">
+	<link rel="stylesheet" href="css/fontawesome-all.css">
+	<link rel="stylesheet" href="css/stylesheet.css">
 </head>
 <body>
-<div class="header">
-  <img src="quandamooka_brand.jpg" alt="Salt Water Murris"/>
-<div class="navbar">
-  <div id="grad1">
-  <a href="index.html">Home</a>
-  <div class="dropdown">
-    <button class="dropbtn">Shop
-      <!-- <i class="fa fa-caret-down"></i> -->
-    </button>
-    <div class="dropdown-content">
-      <a href="paintings.html">Paintings</a>
-      <a href="merchandise.html">Merchandise</a>
-    </div>
-  </div>
-  <a href="artistspage.html">Artists</a>
-  <a href="culture.html">Quandamooka Culture</a>
-  <a href="#news">Cart</a>
-  <a href="userlogin.html">Login</a>
-</div>
-</div>
-</div>
+	<!--Header-->
+	<header id="main-header">
+		<div class="container">
+			
+			<div class="row center-xs center-sm center-md center-lg middle-xs middle-sm middle-md top-lg">
 
-<div class="flex-container">
+				<div class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
+					<a href='index.html'><img id='header-logo' src="images/logo-h.png" alt="Home">	</a>	
+				</div>
+				<div class="col-xs-12 col-sm-7 col-md-7 col-lg-7"  style='background-color: orange;   background: url("images/navbar.svg") no-repeat; background-size: 100%; border-bottom: 200px transparent solid;' >
+					<div class="row ">
+						<nav id='navbar' >
+							<ul>
+								<li class='current'><a href='paintings.html'>Store</a></li>
+								<li><a href='artistspage.html'>Artist</a></li>
+								<li><a href='culture.html'>Culture</a></li>
+								<li><a href='cart.html'>Cart</a></li>
+								<li><a href='userlogin.html'>Login</a></li>
+							</ul>
+						</nav>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</header>
+	
 
-	<section class='blurb'>
-		<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit</p>
-
-		<p> quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis 
-		voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat</p>
+	
+	<!--COPYWRITING-->
+	<section id="copywriting">
+		<div class="container"> 
 		
-		<p> Tel: 034912303</p>
-		<p> Email: gucci-mane@pumpit.up</p>
-		
-		<ul>
-			<li> <div class='social-media'> <i class="fa fa-envelope" style="font-size:48px;color:white"></i> </div> </li>
-			<li> <div class='social-media'> <i class="fa fa-facebook-square" style="font-size:48px;color:white"></i> </div> </li>
-		</ul>
+
+			<div class="row center-xs center-sm center-md center-lg middle-xs middle-sm middle-md middle-lg emphasis">
+				<div class="col-xs-12 col-sm-5 col-md-5 col-lg-5 ">
+					<img src='images/swm-photos/turtle.jpg'>
+				</div>
+				<div class="col-xs-12 col-sm-7 col-md-7 col-lg-7">
+				<p>Salt Water Murris is a not-for-profit organisation predominately comprised of descendants of the original Nunukal, Nughie and Goenpul tribes of the region.</p>
+					
+				</div>
+			</div>
+			<div class="row center-xs center-sm center-md center-lg middle-xs middle-sm middle-md middle-lg emphasis">
+
+				<div class="col-xs-12 col-sm-7 col-md-7 col-lg-7">
+					<p>The indigenous people of Minjerribah within the Quandamooka region have an uninterrupted history of living on the island that dates back thousands of years.</</p> 
+				</div>
+				<div class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
+					<img src='images/swm-photos/sea.jpg'>
+				</div>
+			</div>
+			<div class="row center-xs center-sm center-md center-lg middle-xs middle-sm middle-md middle-lg emphasis">
+				<div class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
+					<img src='images/swm-photos/whale.jpg'>
+				</div>
+				<div class="col-xs-12 col-sm-7 col-md-7 col-lg-7">
+					<p>Our people tell stories and pass on cultural knowledge through our art. </p> 
+				</div>
+			</div>
+			<div class="row center-xs center-sm center-md center-lg middle-xs middle-sm middle-md middle-lg emphasis">
+				<div class="col-xs-12 col-sm-7 col-md-7 col-lg-7">
+					<p>	Through our art, all the ancestors that lived on Quandamooka from the beginning of time, and through our bloodlines, still exist, as long as we have the art.</p> 
+				</div>
+				<div class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
+					<img src='images/swm-photos/material.jpg'>
+				</div>
+			</div>
+		</div>
 	</section>
-	
-	<section class='blurb-photo'>
-	<img src='http://via.placeholder.com/500x500'>
-	</section>
-	
-	<section class='map'>
-	<span> Google Map Here</span>
-	</section>
-	
-	
-</div>
+
+
 
 </body>
 </html>
 
 
 <style>
-.blurb {
-	margin: 2rem;
-	border: dotted skyblue;
-	border-radius: 12px;
-	padding: 2rem;
-	max-height: 500px;
-	max-width: 40%;
-}
-.blurb-photo {
-	margin: 2rem;	
-	border: skyblue solid;
-	border-radius: 12px;
-}
-.map{
-	border: dotted skyblue;
-	border-radius: 12px;
-	min-width:75%;
-	min-height: 400px;
-	margin-bottom: 3rem;
-	background-color: MediumSeaGreen;
-}
-.flex-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-li{
-	list-style: none;
-}
-.social-media{
-	float: left;
-	margin: 1rem;
-	border-radius: 12px;
-	padding: 1rem;
-	background: #60A2AE;
+body{
+
 }
 </style>
