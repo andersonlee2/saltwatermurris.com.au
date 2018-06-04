@@ -2,50 +2,50 @@
 <html>
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="css/flexboxgrid.css">
+	<!-- <link rel="stylesheet" href="css/flexboxgrid.css"> -->
 	<link rel="stylesheet" href="css/fontawesome-all.css">
 	<link rel="stylesheet" href="css/stylesheet.css">
 </head>
 <body>
 	<!--Header-->
 	<header id="main-header">
-		<div class="container">
-			
-			<div class="row center-xs center-sm center-md center-lg middle-xs middle-sm middle-md top-lg">
-
-				<div class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
-					<a href='index.html'><img id='header-logo' src="images/logo-h.png" alt="Home">	</a>	
-				</div>
-				<div class="col-xs-12 col-sm-7 col-md-7 col-lg-7"  style='background-color: orange;   background: url("images/navbar.svg") no-repeat; background-size: 100%; border-bottom: 200px transparent solid;' >
-					<div class="row ">
-						<nav id='navbar' >
-							<ul>
-								<li ><a href='paintings.html'>Store</a></li>
-								<li><a href='artistspage.html'>Artist</a></li>
-								<li><a href='culture.html'>Culture</a></li>
-								<li><a href='cart.html'>Cart</a></li>
-								<li class='current'><a href='userlogin.html'>Login</a></li>
-							</ul>
-						</nav>
-					</div>
-					
-				</div>
+		<div class="container" >
+			<div id="brand">
+				<a href='index.html'><img src="images/logo/horizontal.png" alt="Saltwater Murris Quandamooka"> </a>
 			</div>
+			<nav>
+				<ul>
+					<li ><a href='paintings.html'> Paintings</a></li>
+					<li ><a href='merchandise.html'> Merchandise</a></li>
+					<li><a href='artistspage.html'>Artist & Culture</a></li>
+				</ul>
+				<ul>
+					<li><a href='cart.html'>  Cart</a></li>
+					<li ><a href='userlogin.html'>Login</a></li>
+				</ul>	
+			</nav>
 		</div>
 	</header>
 	
 	
-<div class="contentbox">
-  <div class="forms">
-  <form method="post">
-      <h1> Login to your account! </h1>
-    <input type="email" name="email" placeholder="Email Address" required>
-    <input type="password" name="pass" placeholder="Password" required>
-    <input type="submit" name="submit" value="Login">
-  </form>
+		<div class="container">
+			<div class="forms">
+			  <form method="post">
+				  <h1> Login to your account! </h1>
+				<input type="email" name="email" placeholder="Email Address" required>
+				<input type="password" name="pass" placeholder="Password" required>
+				<input type="submit" name="submit" value="Login">
+				<div id='signup' >Don't have an account? <a href="signup.html">Sign up</a> today!<br/></div>
+			  </form>
+				
+			</div>
+				
+			
+		</div>
 
-</div>
-    <h3><a href="signup.html">Don't have an account? Sign up today!</a><br/></h3>
-</div>
+	<footer>
+		<p> Facebook and Phone No. Here</p>
+		<p> Saltwater Murris Quandamooka Aboriginal Art Gallery &COPY; 2018</p>
+	</footer>
 </body>
 </html>

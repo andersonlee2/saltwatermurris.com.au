@@ -19,6 +19,7 @@ h4{
 	padding-top: 25px;
 	padding-bottom: 25px;
 	margin: 0;
+	font-weight: lighter;
 }
 
 img{
@@ -319,16 +320,20 @@ display: flex;
     text-decoration-color: #ffa64d;
 }
 
+/***********************
+     LOGIN PAGE
+************************/
+
+h1 {
+	/* color: #ffa64d; */
+}
 
 .forms {
-  background-color: #f2f2f2;
+  /* background-color: #f2f2f2; */
   padding: 40px;
   width: 500px;
   margin: 0 auto 10px;
   border-radius: 2px;
-    display: flex;
-  justify-content: center;
-
 }
 
 .forms h1 {
@@ -350,25 +355,21 @@ display: flex;
 
 .forms input[type=submit] {
   width: 150px;
-  margin-bottom: 10px;
-  position: relative;
+  margin: auto;
+  margin-bottom: 10px;	
   height: 44px;
   font-size: 16px;
   font-weight: bold;
   background: #ffa64d;
   color: white;
-  margin-bottom: 10px;
-  -webkit-appearance: none;
-  border: 1px solid #d9d9d9;
-  border-top: 1px solid #c0c0c0;
+  border: 0;
   padding: 0 8px;
   box-sizing: border-box;
-  -moz-box-sizing: border-box;
 }
 .forms input[type=submit]:hover{
   -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
   -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.24);
+  box-shadow: 0 4px 8px 0 rgba(255,255,255,0.24);
   cursor:pointer;
 }
 
@@ -386,8 +387,6 @@ display: flex;
   -moz-box-sizing: border-box;
 }
 
-
-
 .forms input[type=text]:hover, input[type=email]:hover, input[type=date]:hover, input[type=password]:hover {
   border: 1px solid #A9A9A9;
   -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
@@ -395,6 +394,31 @@ display: flex;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.24);
 }
 
+.forms form {
+	text-align: center;
+}
+
+.forms #signup{
+	padding-top: 50px;
+}
+
+.forms a {
+	color: #ffa64d;
+}
+
+.forms a:hover {
+	text-decoration: underline;
+	color: #ffa64d;
+}
+
+
+/****************
+   ARTIST & CULTURE PAGE
+*******************/
+#artist .container, #culture .container {
+	padding: 40px;
+	
+}
 
 
 
