@@ -2,7 +2,6 @@
 <html>
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="css/flexboxgrid.css">
 	<link rel="stylesheet" href="css/fontawesome-all.css">
 	<link rel="stylesheet" href="css/stylesheet.css">
 </head>
@@ -11,184 +10,146 @@
 	<!--Header-->
 	<header id="main-header">
 		<div class="container">
-			
-			<div class="row center-xs center-sm center-md center-lg middle-xs middle-sm middle-md top-lg">
-
-				<div class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
-					<a href='index.html'><img id='header-logo' src="images/logo-h.png" alt="Home">	</a>	
-				</div>
-				<div class="col-xs-12 col-sm-7 col-md-7 col-lg-7"  style='background-color: orange;   background: url("images/navbar.svg") no-repeat; background-size: 100%; border-bottom: 200px transparent solid;' >
-					<div class="row ">
-						<nav id='navbar' >
-							<ul>
-								<li ><a href='paintings.html'>Store</a></li>
-								<li><a href='artistspage.html'>Artist</a></li>
-								<li><a href='culture.html'>Culture</a></li>
-								<li class='current'><a href='cart.html'>Cart</a></li>
-								<li ><a href='userlogin.html'>Login</a></li>
-							</ul>
-						</nav>
-					</div>
-					
-				</div>
+			<div id="brand">
+				<a href='index.html'><img src="images/logo/horizontal.png" alt="Saltwater Murris Quandamooka"> </a>
 			</div>
+			<nav>
+				<ul>
+					<li ><a href='paintings.html'> Paintings</a></li>
+					<li ><a href='merchandise.html'> Merchandise</a></li>
+					<li><a href='artistspage.html'>Artist & Culture</a></li>
+				</ul>
+				<ul>
+					<li class='current'><a href='cart.html'>  Cart</a></li>
+					<li ><a href='userlogin.html'>Login</a></li>
+				</ul>	
+			</nav>
 		</div>
 	</header>
 
+	
 	<!-- Cart Section -->
 	<section id="cart">
-		<article> 
-			<img src="images\swm-photos\turtle.jpg">
-			<p class='product-name'>South Passage Bar</p>
-			<p class='dimension lowercase'>120 x 90cm</p>
-			<div class='quantity'>
-			  <select>
-				<option value="1">1</option>
-				<option value="2">2</option>
-				<option value="3">3</option>
-				<option value="4">4</option>
-				<option value="5">5</option>
-				<option value="6">6</option>
-				<option value="7">7</option>
-				<option value="8">8</option>
-				<option value="9">9</option>
-				<option value="10">10</option>
-			  </select>
+		<div class="container" >
+			
+			<h4> Shopping Cart </h4>
+			
+			<div id="payment-info"> Great choices Bob! <br> * We only support PayPal</div>
+			
+			<div id='subheading' class="row">
+				<div class="column"></div>
+				<div class="column"></div>
+				<div class="column"> Quantity </div>
+				<div class="column">Price</div>
 			</div>
-			<p class='price'>AU $235</p>
-			<p><i class="fa fa-trash" aria-hidden="true"></i></p>
-		</article>
-		<article> 
-			<img src="images\swm-photos\turtle.jpg">
-			<p class='product-name'>Stoneware Pendants</p>
-			<p class='dimension lowercase' >8 x 8cm</p>
-			<div class='quantity'>
-			  <select>
-				<option value="1">1</option>
-				<option value="2">2</option>
-				<option value="3">3</option>
-				<option value="4">4</option>
-				<option value="5">5</option>
-				<option value="6">6</option>
-				<option value="7">7</option>
-				<option value="8">8</option>
-				<option value="9">9</option>
-				<option value="10">10</option>
-			  </select>
+			
+			
+			<div class="row">
+				<div class="column">
+					<img class='picture'  src="images\swm-photos\whale.jpg">
+				</div>
+				<div class="column">
+					<div class="product-info" style>
+						<div class="name">Blueberry Pomegranate</div>
+						<div class="dimension"> 80 x 80cm</div>
+						<div class="delete"> <a href='#'>Delete </a></div>
+					</div>
+				</div>
+				<div class="column">
+					<div class='quantity'>
+						<select>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+							<option value="8">8</option>
+							<option value="9">9</option>
+							<option value="10">10</option>
+						  </select>
+					</div>
+				</div>
+				<div class="column"> 
+					<div class="price">$39.99</div>
+				</div>	
 			</div>
-			<p class='price'>AU $15</p>
-			<p><i class="fa fa-trash" aria-hidden="true"></i></p>
-		</article>
-		<article> 
-			<img src="images\swm-photos\turtle.jpg">
-			<p class='product-name'>Turtles</p>
-			<p class='dimension'>90 x 90cm</p>
-			<div class='quantity'>
-			  <select>
-				<option value="1">1</option>
-				<option value="2">2</option>
-				<option value="3">3</option>
-				<option value="4">4</option>
-				<option value="5">5</option>
-				<option value="6">6</option>
-				<option value="7">7</option>
-				<option value="8">8</option>
-				<option value="9">9</option>
-				<option value="10">10</option>
-			  </select>
+						<div class="row">
+				<div class="column">
+					<img class='picture'  src="images\swm-photos\turtle.jpg">
+				</div>
+				<div class="column">
+					<div class="product-info" style>
+						<div class="name">Iridescent Metalic Goonies</div>
+						<div class="dimension"> 80 x 80cm</div>
+						<div class="delete"> <a href='#'>Delete </a></div>
+					</div>
+				</div>
+				<div class="column">
+					<div class='quantity'>
+						<select>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+							<option value="8">8</option>
+							<option value="9">9</option>
+							<option value="10">10</option>
+						  </select>
+					</div>
+				</div>
+				<div class="column"> 
+					<div class="price">$39.99</div>
+				</div>	
 			</div>
-			<p class='price'>AU $200</p>
-			<p><i class="fa fa-trash" aria-hidden="true"></i></p>
-		</article>
-		<article style='display: flex;justify-content:flex-end; border-bottom: none'>
-			<p > Total:  </p>
-			<p style='padding: 1rem 90px 0 1rem;'>AU $450</p>
-		</article>
+						<div class="row">
+				<div class="column">
+					<img class='picture'  src="images\swm-photos\sea.jpg">
+				</div>
+				<div class="column">
+					<div class="product-info" style>
+						<div class="name">Pastel Earthy Pixi Dust</div>
+						<div class="dimension"> 80 x 80cm</div>
+						<div class="delete"> <a href='#'>Delete </a></div>
+					</div>
+				</div>
+				<div class="column">
+					<div class='quantity'>
+						<select>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+							<option value="8">8</option>
+							<option value="9">9</option>
+							<option value="10">10</option>
+						  </select>
+					</div>
+				</div>
+				<div class="column"> 
+					<div class="price">$39.99</div>
+				</div>	
+			</div>
+			
+			
+			
+			<div class="subtotal"> Subtotal: &nbsp <span id='subtotal'> AU $119.97 </span></div>
+			<form action="">
+				<button class='button-1' >Calculate Shipping</button>
+			</form>
 
-		<div id='buttons-container'>
-			<button >Pay with Card</button>
-			<button >Pay with PayPal</button>
 		</div>
 	</section>
 
+	<footer>
+		<p> Saltwater Murris Quandamooka Aboriginal Art Gallery &COPY; 2018</p>
+	</footer>
 </body>
 </html>
-
-<style>
-
-
-sup{
-	letter-spacing: normal;
-	font-size: 10px;
-}
-section{
-	width: 950px;
-	border-radius: 15px;
-	background-color: white;
-	padding: 2rem 2rem;
-	margin: 2rem auto;
-	border: goldenrod 1px dotted; 
-}
-article {
-	border-bottom: goldenrod dotted 1px;
-	overflow: auto;
-}
-p{
-	float:left;
-	padding-top: 1.1rem;
-	padding-right: 2rem;
-	text-align:left;
-}
-img{
-	box-sizing: content-box;
-	width: 107px; height: 60px; 
-	overflow: hidden;
-	padding-right: 2rem;
-	display: block;
-	float:left;
-}
-.product-name{
-	width: 35%;
-}
-.dimension{
-	width: 17%;
-	text-align: left;
-}
-.quantity{
-	width: 3rem;
-	float:left;
-	margin-top: 1rem;
-	margin-right: 1rem;
-	margin-left: 1rem;
-	
-}
-select{
-	font-size: 16px;
-}
-.price{
-	width: 17%;
-	text-align: right;
-}
-button {
-    background-color: papayawhip; 
-    color: black; 
-    border: 2px solid goldenrod;
-    padding: 16px 32px;
-    font-size: 16px;
-    margin: 2rem 2rem 1.5rem;
-    transition-duration: 0.2s;
-    cursor: pointer;
-}
-button:hover {
-    background-color: goldenrod;
-    color: white;
-}
-#buttons-container{
-	display: flex;
-	justify-content: center;
-	border: none;
-}
-.lowercase{
-	text-transform: lowercase;
-}
-</style>

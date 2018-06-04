@@ -12,6 +12,15 @@ body{
 	padding:0;
 }
 
+h4{
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	margin: 0;
+}
+
 img{
 	display: block;
 	width:100%;
@@ -22,14 +31,35 @@ ul {
 	list-style: none
 }
 
+a{
+	text-decoration:none;
+	color: white;
+}
+
 .container{
 	color: white;
-	background-color: #1b2737;
+	background-color: rgba(27, 39, 55, 0.9);
 	width: 1136px;
 	margin: auto;
-	margin-bottom: 50px;
+	margin-bottom: 40px;
 	border: goldenrod 0px solid;
 	box-sizing: border-box;
+}
+
+.button-1 {
+	height: 50px;
+	padding-left: 20px;
+	padding-right:20px;
+	border:0;
+	font-size: 16px;
+	font-weight: bold;
+	background: #ffa64d;
+	color: white;
+}
+
+.button-1:hover {
+	background: #e8491d;
+	cursor:pointer;
 }
 
 
@@ -67,8 +97,6 @@ nav li {
 nav a{
 	font-size: 20px;
 	letter-spacing: 1px;
-	text-decoration:none;
-	color: white;
 }
 
 nav li.current a, nav a:hover{
@@ -102,6 +130,8 @@ footer {
 }
 
 
+
+
 /*****************
     PAINTINGS PAGE
 ******************
@@ -116,6 +146,7 @@ footer {
     flex-wrap: wrap;
 	padding: 0 10px;
 	justify-content: center;
+
 }
 
 #paintings .column {
@@ -126,10 +157,7 @@ footer {
 }
 
 #paintings h4{
-	text-align: center;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	padding-top: 50px;
+	border-bottom: #ffa64d 2px solid;
 }
 
 #paintings a {
@@ -166,6 +194,67 @@ footer {
 
 
 
+
+
+/*****************
+    CART PAGE
+******************
+	
+/* cart */
+
+#cart .row {
+	display: flex;
+    flex-wrap: wrap;
+	align-items: center;
+	border-bottom: goldenrod solid 1px;
+}
+
+#cart .column {
+	box-sizing:border-box;
+    flex: 25%;
+    max-width: 25%;
+	text-align: center;
+}
+
+#cart #subheading {
+	/* border-bottom: goldenrod solid 2px; */
+}
+
+#cart a {
+	color: skyblue;
+}
+
+#cart a:hover {
+	text-decoration: underline;
+	color: #ffa64d;
+}
+
+#cart .subtotal {
+	display: flex;
+	justify-content:flex-end;
+	padding: 1rem 90px 0 1rem;
+}
+
+#cart #payment-info {
+	padding: 10px 40px;
+
+}
+
+#cart form {
+display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom:40px;
+}
+
+#cart h4 {
+	/* border-bottom: #ffa64d 2px solid; */
+}
+
+
+
+
+/* Helena's Codes */
 
 .contentbox {
     background-color: #f2f2f2;
