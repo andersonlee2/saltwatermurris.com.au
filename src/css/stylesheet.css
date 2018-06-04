@@ -1,133 +1,170 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,100);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
 
 body{
-	background:url('../images/swm-photos/ult.jpg') no-repeat center center;	 
+	background:url('../images/swm-photos/ult.jpg') no-repeat top center;	
+	background-size: 100% ;
+	background-attachment: fixed;
 	font-family: 'Roboto', sans-serif;
-	font-size:17px;
+	font-size:16px;
 	line-height:1.5em;
 	margin:0;
 	padding:0;
 }
 
-p{
-	padding: 0px 20px;
-}
-
 img{
+	display: block;
 	width:100%;
 }
 
+ul {
+	padding: 0;
+	list-style: none
+}
+
 .container{
+	color: white;
+	background-color: #1b2737;
+	width: 1136px;
 	margin: auto;
+	margin-bottom: 50px;
 	border: goldenrod 0px solid;
-	/* background-color: rgb(200,200,255, 0.9); */
+	box-sizing: border-box;
 }
 
 
 /* MAIN-HEADER */
 #main-header {
-	/* background:url('../images/swm-photos/ult.jpg') no-repeat center center;	 */
-
-}
-
-#main-header .row{
+	/* background-color: rgba(0,0,0,0.5); */
 
 }
 
 #main-header .container {
-
-	box-sizing: border-box;
-
-
-
+	background-color: rgba(0,0,0,0.55);
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	padding: 0 20px;
+	overflow: auto;
 }
 
-#header-logo{
-	background-color: rgb(95,170,166, 0.9);
-	box-sizing:border-box;
-	padding: 0 90px 0px 30px;
-	border-right: 10px solid #B9CD4A;
+#brand{
+	float: left;
+	width: 20%;
 }
 
-#header-nav  img{
-	display: block;
-	position: relative;
-	z-index: 1;
-	top: -300px;
-	
+nav {
+	float: right;
+	text-transform:uppercase;
+	text-align: right;
 }
 
-#navbar{
-  text-transform:uppercase;
-  /* background:url('../images/navbar.svg') no-repeat top  ;  */
-  /* background-size: 100%; */
-  /* background-color: transparent; */
-  /* padding: 0px 0px 200px 10px; */
-
-  display: block;
-  position: relative;
-  z-index:100;
-}
-
-#header-nav ul {
-	list-style: none
-}
-
-#navbar li {
-	display:inline;
-	padding-right:60px;
+nav li {
+	display: inline;
 	list-style:none;
+	padding: 0 20px;
 }
 
-#navbar a{
+nav a{
 	font-size: 20px;
+	letter-spacing: 1px;
 	text-decoration:none;
-	color:black;
+	color: white;
 }
 
-#navbar li.current a, #navbar a:hover{
-  color:#56a79a;
-  border-bottom: 3px solid #56a79a;
+nav li.current a, nav a:hover{
+  color: #ffa64d;
+  border-bottom: 3px solid #ffa64d;
   padding-bottom:3px;
 }
 
-
-/*   INDEX PAGE
-
- COPYWRITING*/
-#copywriting p{
-	font-size: 24px;
-
+nav img {
+	width: 30px;
+	vertical-align: bottom;
 }
 
-#copywriting img{
-
+/* FOOTER */
+footer {
+	color: white;
+	background-color:  	#1c1c1c;
+	padding: 20px;
+	text-align: center;
 }
 
+
+
+/*****************
+    INDEX PAGE
+******************
+	
+/* COPYWRITING*/
 #copywriting .container {
-	/* width: 900px; */
-	padding: 50px 100px;
-	box-sizing: border-box;
-	/* border-radius: 20px; */
-	/* background-color: rgb(200,200,255, 0.9); */
+
 }
 
-.emphasis {
+
+/*****************
+    PAINTINGS PAGE
+******************
+	
+/* PAINTINGS*/
+#paintings .container {
+	padding-bottom: 50px;
+}
+
+#paintings .row {
+	display: flex;
+    flex-wrap: wrap;
+	padding: 0 10px;
+	justify-content: center;
+}
+
+#paintings .column {
+	box-sizing:border-box;
+    flex: 33%;
+    max-width: 33%;
+	padding: 0 10px;
+}
+
+#paintings h4{
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	padding-top: 50px;
+}
+
+#paintings a {
+	text-decoration:none;
+	color: white;
+}
+
+.item-content{
+	border: white solid 1px;
+	margin-top: 20px;
+	background-color: #293c56;
+}
+
+.item-info{
+	overflow: hidden;
+	margin: 0.7rem;
+	display: flex;
+	align-items: center;
+}
+
+.item-info .price {
+	margin-left: auto;
+	border-radius: 8%;
+	padding: 0.3rem 0.6rem;
+	font-size: 1.2rem;
+	letter-spacing: 1px;
 	color: black;
-	background-color: rgb(200,200,255, 0.9);
-	padding: 0px 50px;
+	background-color: #fefefe;
 }
 
-.emphasis:first-child {
-	padding-top: 60px;
-	border-top-left-radius: 10px;
-	border-top-right-radius: 10px;
+.item-content:hover {
+	background-color: #1b2737;
 }
-.emphasis:last-child {
-	padding-bottom: 60px;
-	border-bottom-left-radius: 10px;
-	border-bottom-right-radius: 10px;
-}
+
+
 
 
 .contentbox {

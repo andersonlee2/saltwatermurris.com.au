@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="css/flexboxgrid.css">
+	<!-- <link rel="stylesheet" href="css/flexboxgrid.css"> -->
 	<link rel="stylesheet" href="css/fontawesome-all.css">
 	<link rel="stylesheet" href="css/stylesheet.css">
 </head>
@@ -10,213 +10,99 @@
 	<!--Header-->
 	<header id="main-header">
 		<div class="container">
-			
-			<div class="row center-xs center-sm center-md center-lg middle-xs middle-sm middle-md top-lg">
-
-				<div class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
-					<a href='index.html'><img id='header-logo' src="images/logo-h.png" alt="Home">	</a>	
-				</div>
-				<div class="col-xs-12 col-sm-7 col-md-7 col-lg-7"  style='background-color: orange;   background: url("images/navbar.svg") no-repeat; background-size: 100%; border-bottom: 200px transparent solid;' >
-					<div class="row ">
-						<nav id='navbar' >
-							<ul>
-								<li class='current'><a href='paintings.html'>Store</a></li>
-								<li><a href='artistspage.html'>Artist</a></li>
-								<li><a href='culture.html'>Culture</a></li>
-								<li><a href='cart.html'>Cart</a></li>
-								<li><a href='userlogin.html'>Login</a></li>
-							</ul>
-						</nav>
-					</div>
-					
-				</div>
+			<div id="brand">
+				<a href='index.html'><img src="images/logo/horizontal.png" alt="Saltwater Murris Quandamooka"> </a>
 			</div>
+			<nav>
+				<ul>
+					<li class='current'><a href='paintings.html'> Paintings</a></li>
+					<li ><a href='merchandise.html'> Merchandise</a></li>
+					<li><a href='artistspage.html'>Artist & Culture</a></li>
+				</ul>
+				<ul>
+					<li><a href='cart.html'>  Cart</a></li>
+					<li ><a href='userlogin.html'>Login</a></li>
+				</ul>	
+			</nav>
 		</div>
 	</header>
 
 
-	<section class='section-1'>
-		<h4>Featured Paintings</h4>
-		<ul class='listing'>
-			<li>
-				<div class='item-content'>
-					<img src="http://via.placeholder.com/150x150" alt="">
-					<div class='item-footer'>
-						<p>30 x 30cm</p>
-						<div class='item-price'>$60</div>
-					</div>
+	<section id='paintings'>
+		<div class="container">
+			<h4>Featured Paintings</h4>
+			<div class="row">
+				<div class="column">
+					<ul>
+						<li>
+							<a href='#'><div class='item-content'> 
+								<img src="images/swm-photos/material.jpg" >
+								<div class='item-info'>
+									<div class='dimension'>30 x 30cm</div>
+									<div class='price'>$60</div>
+								</div>
+							</div></a>
+						</li><li>
+							<a href='#'><div class='item-content'> 
+								<img src="images/swm-photos/red.jpg" >
+								<div class='item-info'>
+									<div class='dimension'>30 x 120cm</div>
+									<div class='price'>$180</div>
+								</div>
+							</div></a>
+						</li>
+					</ul>
 				</div>
-			</li>
-			<li>
-				<div class='item-content'>
-					<img src="http://via.placeholder.com/150x150" alt="">
-					<div class='item-footer'>
-						<p>30 x 30cm</p>
-						<div class='item-price'>$50</div>
-					</div>
+				
+				<div class="column">
+					<ul>
+						<li>
+							<a href='#'><div class='item-content'> 
+								<img src="images/swm-photos/red.jpg" >
+								<div class='item-info'>
+									<div class='dimension'>30 x 120cm</div>
+									<div class='price'>$180</div>
+								</div>
+							</div></a>
+						</li><li>
+							<a href='#'><div class='item-content'> 
+								<img src="images/swm-photos/material.jpg" >
+								<div class='item-info'>
+									<div class='dimension'>30 x 30cm</div>
+									<div class='price'>$60</div>
+								</div>
+							</div></a>
+						</li>
+					</ul>
 				</div>
-			</li>
-			<li>
-				<div class='item-content'>
-					<img src="http://via.placeholder.com/150x150" alt="">
-					<div class='item-footer'>
-						<p>120 x 100cm</p>
-						<div class='item-price'>$50</div>
-					</div>
+				
+				<div class="column">
+					<ul>
+						<li>
+							<a href='#'><div class='item-content'> 
+								<img src="images/swm-photos/material.jpg" >
+								<div class='item-info'>
+									<div class='dimension'>30 x 30cm</div>
+									<div class='price'>$60</div>
+								</div>
+							</div></a>
+						</li><li>
+							<a href='#'><div class='item-content'> 
+								<img src="images/swm-photos/red.jpg" >
+								<div class='item-info'>
+									<div class='dimension'>30 x 120cm</div>
+									<div class='price'>$180</div>
+								</div>
+							</div></a>
+						</li>
+					</ul>
 				</div>
-			</li>
-			<li>
-				<div class='item-content'>
-					<img src="http://via.placeholder.com/150x150" alt="">
-					<div class='item-footer'>
-						<p>30 x 30cm</p>
-						<div class='item-price'>$50</div>
-					</div>
-				</div>
-			</li>
-			<li>
-				<div class='item-content'>
-					<img src="http://via.placeholder.com/150x150" alt="">
-					<div class='item-footer'>
-						<p>30 x 30cm</p>
-						<div class='item-price'>$60</div>
-					</div>
-				</div>
-			</li>
-			<li>
-				<div class='item-content'>
-					<img src="http://via.placeholder.com/150x150" alt="">
-					<div class='item-footer'>
-						<p>30 x 30cm</p>
-						<div class='item-price'>$50</div>
-					</div>
-				</div>
-			</li>
-			<li>
-				<div class='item-content'>
-					<img src="http://via.placeholder.com/150x150" alt="">
-					<div class='item-footer'>
-						<p>120 x 100cm</p>
-						<div class='item-price'>$50</div>
-					</div>
-				</div>
-			</li>
-			<li>
-				<div class='item-content'>
-					<img src="http://via.placeholder.com/150x150" alt="">
-					<div class='item-footer'>
-						<p>30 x 30cm</p>
-						<div class='item-price'>$50</div>
-					</div>
-				</div>
-			</li>
-			<li>
-				<div class='item-content'>
-					<img src="http://via.placeholder.com/150x150" alt="">
-					<div class='item-footer'>
-						<p>30 x 30cm</p>
-						<div class='item-price'>$60</div>
-					</div>
-				</div>
-			</li>
-			<li>
-				<div class='item-content'>
-					<img src="http://via.placeholder.com/150x150" alt="">
-					<div class='item-footer'>
-						<p>30 x 30cm</p>
-						<div class='item-price'>$50</div>
-					</div>
-				</div>
-			</li>
-			<li>
-				<div class='item-content'>
-					<img src="http://via.placeholder.com/150x150" alt="">
-					<div class='item-footer'>
-						<p>120 x 100cm</p>
-						<div class='item-price'>$50</div>
-					</div>
-				</div>
-			</li>
-			<li>
-				<div class='item-content'>
-					<img src="http://via.placeholder.com/150x150" alt="">
-					<div class='item-footer'>
-						<p>30 x 30cm</p>
-						<div class='item-price'>$50</div>
-					</div>
-				</div>
-			</li>
-			<li>
-				<div class='item-content'>
-					<img src="http://via.placeholder.com/150x150" alt="">
-					<div class='item-footer'>
-						<p>120 x 100cm</p>
-						<div class='item-price'>$50</div>
-					</div>
-				</div>
-			</li>
-			<li>
-				<div class='item-content'>
-					<img src="http://via.placeholder.com/150x150" alt="">
-					<div class='item-footer'>
-						<p>30 x 30cm</p>
-						<div class='item-price'>$50</div>
-					</div>
-				</div>
-			</li>
-		</ul>
+			</div>
+		</div>
 	</section>
+	
+	<footer>
+		<p> Saltwater Murris Quandamooka Aboriginal Art Gallery &COPY; 2018</p>
+	</footer>
 </body>
 </html>
-
-<style>
-ul {
-  list-style: none;
-}
-.listing{
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: center;
-}
-.section-1 {
-	padding-top: 2rem;
-	padding-bottom: 2rem;
-	background-color: rgba(255,255,255,0.9);
-
-
-}
-.section-1 h4{
-	text-align: center;
-	text-transform: uppercase;
-	margin: 1.5rem;
-}
-.item-content{
-	border: #c9ebff solid 1px;
-	margin: 1rem;
-	width: 150px;
-}
-.item-content img{
-	height: 150;
-	width:150;
-}
-.item-footer{
-	overflow: hidden;
-	margin: .5rem;
-}
-.item-content p{
-	float: left;
-
-}
-.item-price {
-	padding: 0.2rem;
-	float: right;
-	font-size: 1.2rem;
-	border-radius: 8%;
-	color: #1b7f6a;
-	background-color: #c9ebff;
-}
-.item-price:hover{
-	color: #c9ebff;
-	background-color: black;
-}
-</style>

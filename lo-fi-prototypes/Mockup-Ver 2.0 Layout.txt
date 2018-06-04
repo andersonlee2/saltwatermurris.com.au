@@ -1,0 +1,32 @@
+Mockup-Ver 2.0 Layout
+
+Home Page
+-on the navbar, a house icon
+-one photo of the gallery
+-Contact info
+-Map
+-About Us blurb
+-Top 5 paintings
+-Top 5 Merchandise
+
+Shop Page
+-on hover, second navbar will appear showing Paintings, and Merchandise
+
+Artist Page
+
+-artists info
+
+Quandamooka Culture Page
+
+-info displayed in typography
+-photos
+
+Shopping Cart Page
+-cart icon on navbar
+-picture , product name, price, quantity, dimension, plus and minus buttons,
+
+clear cart button, checkout button, greetings user-id, subtotal, 
+
+
+Facebook
+-link to fb (as current link does not work) 
