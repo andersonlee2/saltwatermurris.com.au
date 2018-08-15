@@ -1,52 +1,34 @@
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,100);
+@import url(http://fonts.googleapis.com/css?family=Roboto);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
 
+/********** Global **********/
+
+/* Color Palette */
+:root {
+    --orange: #E37B00; 
+    --light-orange: #F1BD7F; 
+    --brown: #522B1C; 
+    --blue: #00629b; 
+    --teal: #3fbeaa; 
+    --light-teal: #48dcc5; 
+}
+
+
 body{
-	background:url('../images/swm-photos/ult.jpg') no-repeat top center;	
+    margin: 0;
+/*	background:url('../images/swm-photos/ult.jpg') no-repeat top center;	*/
+/*    background: var(--teal);*/
 	background-size: 100% ;
 	background-attachment: fixed;
 	font-family: 'Roboto', sans-serif;
 	font-size:16px;
-	line-height:1.5em;
-	margin:0;
-	padding:0;
-}
-
-h4{
-	text-align: center;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	padding-top: 25px;
-	padding-bottom: 25px;
-	margin: 0;
-	font-weight: lighter;
-}
-
-img{
-	display: block;
-	width:100%;
-}
-
-ul {
-	padding: 0;
-	list-style: none
 }
 
 a{
 	text-decoration:none;
-	color: white;
 }
 
-.container{
-	color: white;
-	background-color: rgba(27, 39, 55, 0.9);
-	width: 1136px;
-	margin: auto;
-	margin-bottom: 40px;
-	border: goldenrod 0px solid;
-	box-sizing: border-box;
-}
-
+/* buttons */
 .button-1 {
 	height: 50px;
 	padding-left: 20px;
@@ -63,87 +45,396 @@ a{
 	cursor:pointer;
 }
 
-
-/* MAIN-HEADER */
-#main-header {
-	/* background-color: rgba(0,0,0,0.5); */
-
+.button-2{
+    border-radius: 500px;
+    border: 1.2px solid #262626;
+    font-weight: 700;
+    color:white;
+    background: linear-gradient(to bottom, #262626 50%, white 50%);
+    background-size: 100% 210%;
+    background-position: top;
+    transition: .2s;
 }
 
-#main-header .container {
-	background-color: rgba(0,0,0,0.55);
-	border-bottom-left-radius: 10px;
-	border-bottom-right-radius: 10px;
-	padding: 0 20px;
-	overflow: auto;
+.button-2:hover{
+    background-position: bottom;
+    color: #262626;
+    cursor: pointer;
 }
 
-#brand{
-	float: left;
-	width: 20%;
+.button-3{
+    position: relative;
+    border: 1.2px solid #262626;
+    border-radius: 500px;
+    font-weight: 700;
+    color:#262626;
+    background: linear-gradient(to bottom, white 50%, #262626 50%);
+    background-size: 100% 210%;
+    background-position: top;
+    transition: .2s;
 }
 
-nav {
-	float: right;
-	text-transform:uppercase;
-	text-align: right;
+.button-3:hover{
+    background-position: bottom;
+    color: white;
+    cursor: pointer;
 }
 
-nav li {
-	display: inline;
-	list-style:none;
-	padding: 0 20px;
+
+
+
+/*************  Header *************/
+
+/* Hamburger Menu */
+header .menu-btn {
+    position: fixed;
+    left: 16px;
+    top: 12px;
+    cursor: pointer;
+    z-index: 3;
+    transition: transform .3s ease-out;
 }
 
-nav a{
-	font-weight: lighter;
-	font-size: 20px;
-	letter-spacing: 1px;
+header .btn-line{
+    width: 28px;
+    height: 3px;
+    margin-bottom: 5px;
+    background: var(--teal);
+    transition: .3s ease-out;
 }
 
-nav li.current a, nav a:hover{
-  color: #ffa64d;
-  border-bottom: 3px solid #ffa64d;
-  padding-bottom:3px;
+/* Rotate into X with Menu Lines */
+header .close{
+    transform: rotate(-180deg);
 }
 
-nav img {
-	width: 30px;
-	vertical-align: bottom;
+/* Line 1 - Rotate */
+header .close > .btn-line:nth-child(1){
+    transform: rotate(45deg) translate(5px, 5px);
+    background: white;
+}
+/* Line 2 - Hide */
+header .close > .btn-line:nth-child(2){
+    opacity: 0;
+    background: white;
+}
+/* Line 3 - Rotate */
+header .close > .btn-line:nth-child(3){
+    transform: rotate(-45deg) translate(7px, -6px);
+    background: white;
 }
 
-/* FOOTER */
+/* Menu Overlay */
+header .menu {
+    position: absolute;
+    top: 0;
+}
+
+header .menu-nav{
+    position: fixed;
+    left:0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: var(--teal);
+    color: white;
+    transition: .2s ease-out;
+    transform: translate3d(-100%,0,0);
+    z-index: 2;
+}
+
+header .menu-nav .nav-item{
+    margin: 16px 0;
+    width: 500px;
+    font-size: 60px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--teal);
+    background: black;
+}
+
+header .menu-nav .nav-item:hover {
+    background: white;
+}
+
+.noscroll{
+    overflow: hidden;
+}
+
+header .show{
+    visibility: visible;
+    opacity: 1;
+}
+
+header .show .menu-nav{
+    transform: translate3d(0,0,0);
+}
+
+
+/* Bag Icon */
+header .cart-btn{
+    position: fixed;
+    right: 20px;
+    top: 13.5px;
+    width: 30px;
+    height: 30px;
+    z-index: 3;
+}
+
+header .cart-btn path{
+    fill: var(--teal);    
+}
+
+
+
+
+
+/*************** FOOTER ***************/
 footer {
-	color: white;
-	background-color:  	#1c1c1c;
-	padding: 20px;
+	color: #59595d;
+/*	background-color:  	#1c1c1c;*/
 	text-align: center;
 }
 
 
 
-/*****************
-    INDEX PAGE
-******************
-	
-/* COPYWRITING*/
-#copywriting .container {
 
+
+/************* INDEX PAGE *************/
+
+/* Title Slide */
+.title-lockup {
+    display: flex;
+    margin: 80px 0 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-lockup .logo{
+    width: 394px;  height: 388px;
+    background: url(../images/swmq-logo.png);
+    background-size: 394px 388px;
+}
+
+.title-lockup .label{
+    vertical-align: top;
+    text-align:left;
+    padding-right: 50px;
+}
+
+.title-lockup h1{
+    font-size: 34px;
+    line-height: 32px;
+    margin: 0 0 36px;
+}
+
+.title-lockup p{
+    padding-left: 2em;
+    color:#727272;
+}
+
+.title-lockup p:last-of-type{
+    padding-bottom: 36px;
+    border-bottom: 1px solid #cecece;
+}
+
+/* icons */
+.title-lockup p[class^='icon-']::before{
+    width: 1.2rem;
+/*    display: inline-block;*/
+    position: absolute;
+    vertical-align: middle;
+    text-indent:   -2em;
+}
+.title-lockup .icon-pin::before{
+    content: url(../icons/location.svg);
+}
+.title-lockup .icon-time::before{
+    content: url(../icons/time.svg);
+}
+.title-lockup .icon-envelope::before{
+    content: url(../icons/envelope.svg);
+}
+.title-lockup .icon-phone::before{
+    content: url(../icons/phone.svg);
+}
+
+/* buttons */
+.title-lockup .button-2, .title-lockup .button-3{
+    width:180px; height: 40px;
+}
+
+.title-lockup .button-2{
+    margin-right: 10px;
+}
+
+.title-lockup .link-facebook, .title-lockup .link-shop{
+    display: inline-block;
+    position: relative;
+    border:  1.8px solid #262626;
+    border-radius: 500px;
+    margin-right: 22px;
+    width: 32px; height: 32px;
+    overflow: hidden;
+    white-space: nowrap;
+    transition:  .3s ease;
+    background: linear-gradient(to bottom, white 50%, #262626 50%);
+    background-size: 100% 210%;
+    background-position: top;
+}
+/* icon svg */
+.title-lockup .link-facebook::before, .title-lockup .link-shop::before{
+    content: url(../icons/iconmonstr-facebook-black.svg);
+    position: absolute;
+    left:3.8px; top:50%;
+    transform: translateY(-50%) scale(0.8);
+    transition: .2s ease;
+}
+.title-lockup .link-shop::before{
+    content: url(../icons/envelope.svg);
+}
+/* button text */
+.title-lockup .link-facebook > div, .title-lockup .link-shop > div{
+    color: white;
+    position:absolute;
+    left: 32px; top:50%;
+    transform: translateY(-50%);
+}
+.title-lockup .link-facebook:hover, .title-lockup .link-shop:hover{
+    width: 150px;
+    background-position: bottom;
+}
+/*change to white icon*/
+.title-lockup .link-facebook:hover::before{
+    content: url(../icons/iconmonstr-facebook.svg);
+}
+.title-lockup .link-shop:hover::before{
+    content: url(../icons/location-shopping.svg);
+}
+
+
+/* Background Image */
+.bg-image{
+    background: var(--blue);
+    background-attachment: fixed;
+    transition: 0.3s ease-out;
+}
+
+/* Content Wrap */
+.content-wrap{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 150px 320px 90px 16px ;
+    max-width: 1030px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    line-height: 1.5rem;
+}
+
+.content-wrap h1{
+    display: inline;
+    padding: 0 3.2px;
+    background: black; color: #eee;
+    box-shadow:3.2px 0 0 black,-3.2px 0 0 black;
+    text-transform: uppercase;
+}
+
+.text-highlight{
+    padding: 2px 0; 
+    background:white;color:#59595d;
+    box-shadow:3.2px 0 0 white,-3.2px 0 0 white;
+}
+
+
+
+/*************** Mobile *****************/
+@media screen and (max-width: 992px) {
+    
+    header .menu-nav .nav-item{
+        width: 90%;
+    }
+    
+    .title-lockup{
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .title-lockup .label{
+        padding-right:0;
+    }
+    .title-lockup h1{
+        text-align: center;
+    }
+    
+    .title-lockup .logo{
+        display: none;
+    }
+    
+    .content-wrap{
+        padding: 100px 16px 80px 19.2px;
+    }
 }
 
 
 
 
-/*****************
-    PAINTINGS PAGE
-******************
-	
-/* PAINTINGS*/
-#paintings .container {
+
+
+/************* STORE PAGE **************/
+.page-wrap{
+    max-width: 1088px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+/*    background: pink;*/
+}
+
+.page-wrap .banner{
+    margin: 28px 0;
+    font-size: 24px;
+    letter-spacing: 1px;
+    color: black;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.product-nav {
+    display: flex;
+    justify-content: center;
+}
+
+.product-nav a{
+    margin: 10px;
+    padding: 3px 14px;
+    border: 1.5px solid transparent;
+    color: black;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.product-nav a:hover, .product-nav .active{
+    border: 1.5px solid black;
+    border-radius: 500px;
+}
+
+
+.product-list img {
+    display:block;
+    width: 100%;
+}
+
+.product-list .container {
 	padding-bottom: 50px;
 }
 
-#paintings .row {
+.product-list .row {
 	display: flex;
     flex-wrap: wrap;
 	padding: 0 10px;
@@ -151,18 +442,14 @@ footer {
 
 }
 
-#paintings .column {
+.product-list .column {
 	box-sizing:border-box;
     flex: 33%;
     max-width: 33%;
 	padding: 0 10px;
 }
 
-#paintings h4{
-	border-bottom: #ffa64d 2px solid;
-}
-
-#paintings a {
+.product-list a {
 	text-decoration:none;
 	color: white;
 }
