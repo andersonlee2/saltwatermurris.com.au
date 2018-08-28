@@ -1,0 +1,95 @@
+/*
+* 2018 SWMQ Online Store
+* Target: detail.html
+*/ 
+
+body{
+/*    background: linear-gradient(white 65%, var(--bg) 65%) fixed;*/
+}
+
+main{
+    margin: 50px auto;
+    max-width: 1088px;
+    display: grid;
+    grid-template-areas:"title  title"
+                        "image  image"
+                        "aside  aside";
+    color: #333;
+}
+main h2{
+    grid-area: title;
+    margin: 0 auto 0 20px;
+    padding: .2em .6em;
+    background: #333; color: #eee;
+    font-size: 1.6em;
+    text-transform: uppercase;
+    transform: translateY(80%);
+    z-index: 1;
+}
+main figure{
+    grid-area: image;
+    margin: 0;
+    position: relative;
+}
+main figure img{
+    display: block;
+    width: 100%;
+}
+main figure button{
+    padding: 1em 0em;
+    width: 150px;
+    position: absolute;
+    right:20px;
+    transform: translateY(-80%);
+}
+main aside{
+    grid-area: aside;
+    margin: 0 20px;
+}
+main aside .detail{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 15px 0 40px;
+    border-bottom: 1px solid #ccc;
+}
+aside h4:nth-child(even){
+    grid-column: 2/3;
+}
+aside h4{
+    font-weight: 400;
+    border-left: 3px solid var(--accent);
+    padding-left: 10px;
+    margin-bottom: 0;
+}
+aside h4 span{
+    color: var(--accent);
+}
+aside p{
+    grid-column: 1/3;
+    padding-top: 20px;
+}
+
+
+/* mobile version */
+@media screen and (min-width: 696px){
+    main{
+        grid-template-areas:"title  image"
+                            "aside  image";
+        justify-content: center;
+    }
+    
+    aside h4{
+        border-left: 0;
+        padding-left: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+

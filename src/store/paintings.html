@@ -1,12 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="../css/stylesheet.css">
+	<link rel="icon" href="../asset/favicon.ico">
+	<link rel="stylesheet" href="css/global.css">
+	<link rel="stylesheet" href="css/store.css">
+	<title>Paintings - SWMQ</title>
 </head>
 <body>
 <!--Header-->
 	<header id="header">
+        <div class="banner">
+            <img src="//unsplash.it/2000/400" alt="">
+            <h1>SWMQ Online Store</h1>
+        </div>
         <div class="menu-btn">
             <div class="btn-line"></div>
             <div class="btn-line"></div>
@@ -14,110 +22,81 @@
         </div>
         <nav class="menu">
             <div class='menu-nav'>
-                <a href='#' class="nav-item">Login/Register</a>
+                <a href='#' class="nav-item">Account</a>
                 <a href='../index.html' class="nav-item">Home</a>
-                <a href='#' class="nav-item">Store</a>
                 <a href='#' class="nav-item">Facebook</a>
             </div>
         </nav>
 
-        <a href="#" class="cart-btn">
-            <svg>
-               <g transform="scale(0.8)">
-                <path d="M36.5 34.8L33.3 8h-5.9C26.7 3.9 23 .8 18.5.8S10.3 3.9 9.6 8H3.7L.5 34.8c-.2 1.5.4 2.4.9 3 .5.5 1.4 1.2 3.1 1.2h28c1.3 0 2.4-.4 3.1-1.3.7-.7 1-1.8.9-2.9zm-18-30c2.2 0 4.1 1.4 4.7 3.2h-9.5c.7-1.9 2.6-3.2 4.8-3.2zM4.5 35l2.8-23h2.2v3c0 1.1.9 2 2 2s2-.9 2-2v-3h10v3c0 1.1.9 2 2 2s2-.9 2-2v-3h2.2l2.8 23h-28z"></path>
-                </g>
-            </svg>
-        </a>
-
-        
 	</header>
+	
 <!--Main Content-->
     <main class='page-wrap'>
-        <div class="banner">SWNQ Online Store</div>
-       
-        <nav class="product-nav">
-            <a href="#" class="nav-item active">Paintings</a>
-            <a href="#" class="nav-item">Merch</a>
-            <a href="#" class="nav-item">Trinkets</a>
+        <!--Product Category Navigation-->
+        <nav class="cat-nav">
+            <a href="#" class="button-3">Craft</a>
+            <a href="#" class="button-3 active">Painting</a>
+            <a href="#" class="button-3">Merch</a>
         </nav>
-        
-        <div class='product-list'>
-                <div class="row">
-                    <div class="column">
-                        <ul>
-                            <li>
-                                <a href='#'><div class='item-content'> 
-                                    <img src="../images/swm-photos/sea.jpg" >
-                                    <div class='item-info'>
-                                        <div class='dimension'>30 x 30cm</div>
-                                        <div class='price'>$60</div>
-                                    </div>
-                                </div></a>
-                            </li>
-                            <li>
-                                <a href='#'><div class='item-content'> 
-                                    <img src="../images/swm-photos/red.jpg" >
-                                    <div class='item-info'>
-                                        <div class='dimension'>30 x 120cm</div>
-                                        <div class='price'>$180</div>
-                                    </div>
-                                </div></a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="column">
-                        <ul>
-                            <li>
-                                <a href='#'><div class='item-content'> 
-                                    <img src="../images/swm-photos/red.jpg" >
-                                    <div class='item-info'>
-                                        <div class='dimension'>30 x 120cm</div>
-                                        <div class='price'>$180</div>
-                                    </div>
-                                </div></a>
-                            </li>
-                            <li>
-                                <a href='#'><div class='item-content'> 
-                                    <img src="../images/swm-photos/sea.jpg" >
-                                    <div class='item-info'>
-                                        <div class='dimension'>30 x 30cm</div>
-                                        <div class='price'>$60</div>
-                                    </div>
-                                </div></a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="column">
-                        <ul>
-                            <li>
-                                <a href='#'><div class='item-content'> 
-                                    <img src="../images/swm-photos/sea.jpg" >
-                                    <div class='item-info'>
-                                        <div class='dimension'>30 x 30cm</div>
-                                        <div class='price'>$60</div>
-                                    </div>
-                                </div></a>
-                            </li>
-                            <li>
-                                <a href='#'><div class='item-content'> 
-                                    <img src="../images/swm-photos/red.jpg" >
-                                    <div class='item-info'>
-                                        <div class='dimension'>30 x 120cm</div>
-                                        <div class='price'>$180</div>
-                                    </div>
-                                </div></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-        </div>
+        <!--Product Listings-->
+        <ul class="grid effect-2">
+          <li class="grid-item">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/orange-tree.jpg" />
+          </li>
+          <li class="grid-item">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/submerged.jpg" />
+          </li>
+          <li class="grid-item">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/look-out.jpg" />
+          </li>
+          <li class="grid-item">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/one-world-trade.jpg" />
+          </li>
+          <li class="grid-item">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/drizzle.jpg" />
+          </li>
+          <li class="grid-item">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/cat-nose.jpg" />
+          </li>
+          <li class="grid-item">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/contrail.jpg" />
+          </li>
+          <li class="grid-item">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/golden-hour.jpg" />
+          </li>
+          <li class="grid-item">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/flight-formation.jpg" />
+          </li>
+                    <li class="grid-item">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/look-out.jpg" />
+          </li>
+          <li class="grid-item">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/one-world-trade.jpg" />
+          </li>
+          <li class="grid-item">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/drizzle.jpg" />
+          </li>
+          <li class="grid-item">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/cat-nose.jpg" />
+          </li>
+          <li class="grid-item">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/contrail.jpg" />
+          </li>
+          <li class="grid-item">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/golden-hour.jpg" />
+          </li>
+          <li class="grid-item">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/flight-formation.jpg" />
+          </li>
+        </ul>
     </main>
 <!--footer-->
 	<footer>
 		<p> Saltwater Murris Quandamooka Aboriginal Art Gallery &COPY; 2018</p>
 	</footer>
-	<script src="../main.js" type="text/javascript"></script>
+	<script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/imagesloaded.js"></script>
+    <script src="js/store.js" type="text/javascript"></script>
+    <script src="js/AnimOnScroll.js"></script>
 </body>
 </html>

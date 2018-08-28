@@ -1,5 +1,5 @@
 //Select DOM Items
-const p = document.querySelectorAll('.content-wrap p');
+const copyBody = document.querySelectorAll('.content-wrap p');
 const menuBtn = document.querySelector('.menu-btn');
 const menu = document.querySelector('.menu');
 const menuNav = document.querySelector('.menu-nav');
@@ -10,25 +10,25 @@ const s1 = document.querySelector('.section-1');
 const s2 = document.querySelector('.section-2');
 
 
-// Header Menu
+// Header Hamburger Menu
 menuBtn.addEventListener('click', toggleMenu);
 function toggleMenu(){
     menuBtn.classList.toggle('close');
     menu.classList.toggle('show');
     body.classList.toggle('noscroll');
-}
+};
 
 
 // Add Text Highlight to paragraphs
-for (var i=0; i<p.length; i++){
+for (var i=0; i<copyBody.length; i++){
     // add span tag around paragraphs
-    p[i].innerHTML = '<span>' + p[i].innerHTML + '</span>'; 
-}
+    copyBody[i].innerHTML = '<span>' + copyBody[i].innerHTML + '</span>'; 
+};
 const spans = document.querySelectorAll('.content-wrap span');
 for (var i=0; i<spans.length; i++){    
     // add text hightlight effect
     spans[i].classList.add('text-highlight');
-}
+};
 
 
 // Change Background Image on Scroll
@@ -43,3 +43,4 @@ window.onscroll = function(){
     bg.style.backgroundAttachment = 'fixed';
   }
 };
+

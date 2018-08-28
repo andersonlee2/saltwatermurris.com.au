@@ -1,5 +1,7 @@
-@import url(http://fonts.googleapis.com/css?family=Roboto);
-@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@font-face {
+    font-family: Roboto;
+    src: url(../../asset/font/Roboto/Roboto-Regular.ttf);
+}
 
 /********** Global **********/
 
@@ -16,11 +18,9 @@
 
 body{
     margin: 0;
-/*	background:url('../images/swm-photos/ult.jpg') no-repeat top center;	*/
-/*    background: var(--teal);*/
 	background-size: 100% ;
 	background-attachment: fixed;
-	font-family: 'Roboto', sans-serif;
+	font-family: Roboto, sans-serif;
 	font-size:16px;
 }
 
@@ -149,6 +149,7 @@ header .menu-nav{
 
 header .menu-nav .nav-item{
     margin: 16px 0;
+    padding: .5rem 0;
     width: 500px;
     font-size: 60px;
     text-align: center;
@@ -204,7 +205,7 @@ footer {
 
 
 
-/************* INDEX PAGE *************/
+/************* LANDING PAGE (index.html) *************/
 
 /* Title Slide */
 .title-lockup {
@@ -216,7 +217,7 @@ footer {
 
 .title-lockup .logo{
     width: 394px;  height: 388px;
-    background: url(../images/swmq-logo.png);
+    background: url(../../asset/img/swmq-logo.png);
     background-size: 394px 388px;
 }
 
@@ -251,16 +252,16 @@ footer {
     text-indent:   -2em;
 }
 .title-lockup .icon-pin::before{
-    content: url(../icons/location.svg);
+    content: url(../../asset/icon/location.svg);
 }
 .title-lockup .icon-time::before{
-    content: url(../icons/time.svg);
+    content: url(../../asset/icon/time.svg);
 }
 .title-lockup .icon-envelope::before{
-    content: url(../icons/envelope.svg);
+    content: url(../../asset/icon/envelope.svg);
 }
 .title-lockup .icon-phone::before{
-    content: url(../icons/phone.svg);
+    content: url(../../asset/icon/phone.svg);
 }
 
 /* buttons */
@@ -277,8 +278,8 @@ footer {
     position: relative;
     border:  1.8px solid #262626;
     border-radius: 500px;
-    margin-right: 22px;
-    width: 32px; height: 32px;
+    margin-right: 18px;
+    width: 40px; height: 40px;
     overflow: hidden;
     white-space: nowrap;
     transition:  .3s ease;
@@ -288,33 +289,35 @@ footer {
 }
 /* icon svg */
 .title-lockup .link-facebook::before, .title-lockup .link-shop::before{
-    content: url(../icons/iconmonstr-facebook-black.svg);
+    content: url(../../asset/icon/iconmonstr-facebook-black.svg);
     position: absolute;
-    left:3.8px; top:50%;
+    left:8px; top:50%;
+    width: 25px;
     transform: translateY(-50%) scale(0.8);
     transition: .2s ease;
 }
 .title-lockup .link-shop::before{
-    content: url(../icons/envelope.svg);
+    content: url(../../asset/icon/location-shopping-black.svg);
 }
 /* button text */
 .title-lockup .link-facebook > div, .title-lockup .link-shop > div{
     color: white;
     position:absolute;
-    left: 32px; top:50%;
+    left: 38px; top:50%;
     transform: translateY(-50%);
 }
 .title-lockup .link-facebook:hover, .title-lockup .link-shop:hover{
-    width: 150px;
+    width: 165px;
     background-position: bottom;
 }
 /*change to white icon*/
 .title-lockup .link-facebook:hover::before{
-    content: url(../icons/iconmonstr-facebook.svg);
+    content: url(../../asset/icon/iconmonstr-facebook.svg);
 }
 .title-lockup .link-shop:hover::before{
-    content: url(../icons/location-shopping.svg);
+    content: url(../../asset/icon/location-shopping.svg);
 }
+
 
 
 /* Background Image */
@@ -336,8 +339,10 @@ footer {
 }
 
 .content-wrap h1{
-    display: inline;
-    padding: 0 3.2px;
+    display: inline-block;
+    font-size: 1.8em;
+    padding: .2em .3em;
+    margin-bottom: .5em;
     background: black; color: #eee;
     box-shadow:3.2px 0 0 black,-3.2px 0 0 black;
     text-transform: uppercase;
@@ -354,10 +359,10 @@ footer {
 /*************** Mobile *****************/
 @media screen and (max-width: 992px) {
     
+    /*Home Page*/
     header .menu-nav .nav-item{
         width: 90%;
-    }
-    
+    }    
     .title-lockup{
         width: 75%;
         margin-left: auto;
@@ -369,13 +374,17 @@ footer {
     .title-lockup h1{
         text-align: center;
     }
-    
-    .title-lockup .logo{
+        .title-lockup .logo{
         display: none;
     }
-    
-    .content-wrap{
+        .content-wrap{
         padding: 100px 16px 80px 19.2px;
+    }
+    
+    /*Store Pages*/
+    .banner h1{
+        font-size: 2.5em;
+        width: 80%;
     }
 }
 
@@ -384,340 +393,3 @@ footer {
 
 
 
-/************* STORE PAGE **************/
-.page-wrap{
-    max-width: 1088px;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-/*    background: pink;*/
-}
-
-.page-wrap .banner{
-    margin: 28px 0;
-    font-size: 24px;
-    letter-spacing: 1px;
-    color: black;
-    text-align: center;
-    text-transform: uppercase;
-}
-
-.product-nav {
-    display: flex;
-    justify-content: center;
-}
-
-.product-nav a{
-    margin: 10px;
-    padding: 3px 14px;
-    border: 1.5px solid transparent;
-    color: black;
-    font-size: 12px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-.product-nav a:hover, .product-nav .active{
-    border: 1.5px solid black;
-    border-radius: 500px;
-}
-
-
-.product-list img {
-    display:block;
-    width: 100%;
-}
-
-.product-list .container {
-	padding-bottom: 50px;
-}
-
-.product-list .row {
-	display: flex;
-    flex-wrap: wrap;
-	padding: 0 10px;
-	justify-content: center;
-
-}
-
-.product-list .column {
-	box-sizing:border-box;
-    flex: 33%;
-    max-width: 33%;
-	padding: 0 10px;
-}
-
-.product-list a {
-	text-decoration:none;
-	color: white;
-}
-
-.item-content{
-	border: white solid 1px;
-	margin-top: 20px;
-	background-color: #293c56;
-}
-
-.item-info{
-	overflow: hidden;
-	margin: 0.7rem;
-	display: flex;
-	align-items: center;
-}
-
-.item-info .price {
-	margin-left: auto;
-	border-radius: 8%;
-	padding: 0.3rem 0.6rem;
-	font-size: 1.2rem;
-	letter-spacing: 1px;
-	color: black;
-	background-color: #fefefe;
-}
-
-.item-content:hover {
-	background-color: #1b2737;
-}
-
-
-
-
-
-/*****************
-    CART PAGE
-******************
-	
-/* cart */
-
-#cart .row {
-	display: flex;
-    flex-wrap: wrap;
-	align-items: center;
-	border-bottom: goldenrod solid 1px;
-}
-
-#cart .column {
-	box-sizing:border-box;
-    flex: 25%;
-    max-width: 25%;
-	text-align: center;
-}
-
-#cart #subheading {
-	/* border-bottom: goldenrod solid 2px; */
-}
-
-#cart a {
-	color: skyblue;
-}
-
-#cart a:hover {
-	text-decoration: underline;
-	color: #ffa64d;
-}
-
-#cart .subtotal {
-	display: flex;
-	justify-content:flex-end;
-	padding: 1rem 90px 0 1rem;
-}
-
-#cart #payment-info {
-	padding: 10px 40px;
-
-}
-
-#cart form {
-display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-bottom:40px;
-}
-
-#cart h4 {
-	/* border-bottom: #ffa64d 2px solid; */
-}
-
-
-
-
-/* Helena's Codes */
-
-.contentbox {
-    background-color: #f2f2f2;
-    overflow: hidden;
-    padding-top: 15px;
-    width: auto;
-    height: auto;
-    margin: 0 auto 10px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-  }
-
-.contentbox h1{
-    text-align: left;
-    padding-left: 20px;
-    font-size: 30px;
-    font-family: inherit;
-    color: #ffa64d;
-  }
-.contentbox h2{
-      text-align: left;
-      font-size: 24px;
-      font-family: inherit;
-      color: #ffa64d;
-}
-
-.contentbox h3{
-  text-align: center;
-}
-
-.contentbox p{
-  text-align: left;
-  padding-left: 20px;
-  padding-right: 100px;
-}
-
-
-.contentbox th, td {
-      padding-left: 40px;
-  }
-.contentbox  th {
-      text-align: left;
-      width: 70%;
-  }
-.contentbox td {
-  padding-left: 100px;
-}
-
-.contentbox h1, h2, th {
-  animation-duration: 2.5s;
-  animation-name: slidein;
-}
-
-
-.contentbox a:link {
-    color: #ffa64d;
-    text-decoration: none;
-    text-decoration: underline;
-    text-decoration-color: #ffa64d;
-}
-
-/***********************
-     LOGIN PAGE
-************************/
-
-h1 {
-	/* color: #ffa64d; */
-}
-
-.forms {
-  /* background-color: #f2f2f2; */
-  padding: 40px;
-  width: 500px;
-  margin: 0 auto 10px;
-  border-radius: 2px;
-}
-
-.forms h1 {
-  font-weight: 50;
-  font-size: 36px;
-  text-align: center;
-}
-
-.forms h2{
-  font-weight: 25;
-  font-size: 18px;
-  text-align: center;
-}
-.forms h3{
-  font-size: 20px;
-  text-align: center;
-  font-weight: lighter;
-}
-
-.forms input[type=submit] {
-  width: 150px;
-  margin: auto;
-  margin-bottom: 10px;	
-  height: 44px;
-  font-size: 16px;
-  font-weight: bold;
-  background: #ffa64d;
-  color: white;
-  border: 0;
-  padding: 0 8px;
-  box-sizing: border-box;
-}
-.forms input[type=submit]:hover{
-  -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
-  -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
-  box-shadow: 0 4px 8px 0 rgba(255,255,255,0.24);
-  cursor:pointer;
-}
-
-.forms input[type=text], input[type=email], input[type=date], input[type=password] {
-  height: 44px;
-  font-size: 16px;
-  width: 100%;
-  margin-bottom: 10px;
-  -webkit-appearance: none;
-  background: #fff;
-  border: 1px solid #d9d9d9;
-  border-top: 1px solid #c0c0c0;
-  padding: 0 8px;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-}
-
-.forms input[type=text]:hover, input[type=email]:hover, input[type=date]:hover, input[type=password]:hover {
-  border: 1px solid #A9A9A9;
-  -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
-  -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.24);
-}
-
-.forms form {
-	text-align: center;
-}
-
-.forms #signup{
-	padding-top: 50px;
-}
-
-.forms a {
-	color: #ffa64d;
-}
-
-.forms a:hover {
-	text-decoration: underline;
-	color: #ffa64d;
-}
-
-
-/****************
-   ARTIST & CULTURE PAGE
-*******************/
-#artist .container, #culture .container {
-	padding: 40px;
-	
-}
-
-
-
-@keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 300%;
-  }
-
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
-}
