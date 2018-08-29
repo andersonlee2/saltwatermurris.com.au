@@ -3,12 +3,8 @@
 * Target: detail.html
 */ 
 
-body{
-/*    background: linear-gradient(white 65%, var(--bg) 65%) fixed;*/
-}
-
 main{
-    margin: 50px auto;
+    margin: 70px auto 80px;
     max-width: 1088px;
     display: grid;
     grid-template-areas:"title  title"
@@ -46,10 +42,10 @@ main aside{
     grid-area: aside;
     margin: 0 20px;
 }
-main aside .detail{
+aside .detail{
     display: grid;
     grid-template-columns: auto auto;
-    padding: 15px 0 40px;
+    padding: 15px 0 20px;
     border-bottom: 1px solid #ccc;
 }
 aside h4:nth-child(even){
@@ -73,14 +69,50 @@ aside p{
 /* mobile version */
 @media screen and (min-width: 696px){
     main{
+        margin: 100px auto;
         grid-template-areas:"title  image"
                             "aside  image";
         justify-content: center;
     }
-    
-    aside h4{
+    main h2{
+        background: initial; 
+        color: #333;
+        padding: 0; 
+        transform: translateY(0);
+        align-self: flex-end;
+        font-size: 2em;
+    }
+    main h2:after{
+        content:'';
+        display: block;
+        width: 50px;
+        padding-bottom: 10px;
+        border-bottom: 5px solid var(--accent);
+    }
+    main figure{
+        align-self: center;
+        padding-right: 20px;
+    }
+    main figure button{
+        left: -20px; top: 30%;
+        font-size: 1em;
+        padding: .75em 1em;
+        width: auto;
+        white-space: nowrap;
+    }
+    main aside {
+        max-width: 75%;
+    }
+    main aside .detail {
+        border: 0;
+    } 
+    main aside h4{
         border-left: 0;
         padding-left: 0;
+    }
+    main aside p{
+        padding: 0;
+        margin: 0;
     }
 }
 

@@ -19,23 +19,28 @@ body{
 }
 a{
     text-decoration: none;
+    color: var(--accent);
+}
+a:hover{
+    text-decoration: underline;
 }
 .button-3{
-    border: .12em solid var(--dark);
+    border: .12em solid var(--accent);
     font-weight: 700;
-    color: #333;
-    background: linear-gradient(to bottom, white 50%, var(--dark) 50%);
+    color: var(--accent);
+    background: linear-gradient(to bottom, white 50%, var(--accent) 50%);
     background-size: 100% 200%;
     background-position: top;
     transition: .2s;
 }
-.button-3:hover{
+.button-3:hover, .active{
     background-position: bottom;
     color: white;
     cursor: pointer;
+    text-decoration: none;
 }
 
-/* Banner */
+/* Header */
 .banner{
     width: 100%; height: 135px;
     position: relative;
@@ -56,20 +61,61 @@ a{
     position: absolute;
     bottom: 0; left: 50%;
     white-space: nowrap;
-    transform: translate(-50%,50%);
+    transform: translate(-50%,30%);
 }
+
+.cart-btn{
+    position: fixed;
+    top: 150px; left: 1vw;
+    cursor: pointer;
+    width: 30px; height: 30px;
+    background: white
+        url(../../asset/svg/blueprint_buy.svg)
+        no-repeat
+        center;
+    padding: 4px;
+}
+.cart-btn:hover{
+    background-color: #eee;
+}
+
+.logo{
+    position: absolute;
+    top: 0; left: 2vw;
+    width: 100px; height: 100px;
+    padding: 4px;
+    background: white
+        url(../../asset/logo_vertical.png)
+        center/100px
+        no-repeat;
+    box-shadow: 0 0 6px 0;
+}
+/* Mobile */
 @media screen and (max-width: 696px){
     .banner h1{
         font-size: 32px;
-/*        width: 100%;*/
+/*         width: 100%;*/
+    }
 }
 
+
 /* Footer */
-footer {
-	color: var(--dark);
-	background-color: white;
-	text-align: center;
-    margin-top: 80px;
-    border-top: 2px solid #1c1c1c;
-/*    padding: 10px 0;*/
+html {
+    position: relative;
+    min-height: 100%;
+}
+footer{
+    margin-bottom: 5px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+	color: #333;
+/*	background: white;*/
+}
+footer h5{
+    text-align: center;
+    margin: 0;
 }
