@@ -1,44 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="stylesheet.css">
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="../asset/favicon.ico">
+	<link rel="stylesheet" href="css/global.css">
+	<link rel="stylesheet" href="css/store.css">
+	<title>Sign Up - SWMQ</title>
 </head>
 <body>
-<div class="header">
-  <img src="quandamooka_brand.jpg" alt="Salt Water Murris"/>
-<div class="navbar">
-  <div id="grad1">
-  <a href="index.html">Home</a>
-  <div class="dropdown">
-    <button class="dropbtn">Shop
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="paintings.html">Paintings</a>
-      <a href="merchandise.html">Merchandise</a>
+<!--Header-->
+<header>
+    <div class="banner">
+        <img src="https://unsplash.it/2000/200/?random">
+        <h1>SWMQ Online Store</h1>
     </div>
-  </div>
-  <a href="artistspage.html">Artists</a>
-  <a href="culture.html">Quandamooka Culture</a>
-  <a href="#news">Cart</a>
-  <a href="userlogin.html">Login</a>
-</div>
-</div>
-<div class="contentbox">
-  <div class="forms">
+    <div class="cart-btn"></div>
+    <div class="modal">
+        <div class="menu">
+            <nav></nav>
+        </div>
+    </div>
+</header>
+<!--Main-->
+<main>
     <form method="post">
-          <h1> Signup for an account! </h1>
-      <input type="text" name="firstname" placeholder="First Name" required>
-      <input type="text" name="lastname" placeholder="Last Name" required>
-      <input type="email" name="email" placeholder="Email Address" required>
-      <input type="password" name="pass" placeholder="Password" required>
-      <input type="password" name="passconfirm" placeholder="Confirm Password" required>
-      <input type="submit" name="submit" value="Register Now">
+        <h1> Sign up for an account! </h1>
+        <input type="text" name="username" placeholder="Name" required>
+        <input type="email" name="email" placeholder="Email Address" required>
+        <input type="password" name="pass" placeholder="Password" required>
+        <input type="password" name="passconfirm" placeholder="Confirm Password" required>
+        <input type="submit" name="submit" value="Register Now" class="button-3">
+        <div>
+            Have an account? <a href="login.html"> Login</a> here!
+        </div>
     </form>
-
-</div>
-      <h3><a href="userlogin.html">Have an account? Login here!</a><br/></h3>
-</div>
+</main>
+<!--Footer-->
+<footer>
+    <h5>&COPY; Saltwater Murris Quandamooka Aboriginal Art Gallery 2019</h5>
+</footer>
 </body>
 </html>
