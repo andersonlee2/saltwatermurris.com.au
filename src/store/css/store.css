@@ -171,34 +171,6 @@ header .show .menu-nav{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*****************
-    CART PAGE
-******************
-	
 /* cart */
 #cart .container{
     max-width: 1088px;
@@ -258,6 +230,24 @@ header .show .menu-nav{
     font-size: 1em;
     float: right;
 }
+@media screen and (max-width: 969px){
+    #cart .container{
+        padding: 0 2rem;    
+    }
+    #cart form{
+        float: none;
+    }
+    #cart .checkout-info{
+        width: 100%;
+    }
+    #cart .shipping-info{
+        margin-top: 100px;
+        width: 100%;
+    }
+}
+
+
+
 
 /* Login & Sign Up */
 main form {
