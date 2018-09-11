@@ -1,155 +1,97 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="css/fontawesome-all.css">
-	<link rel="stylesheet" href="css/stylesheet.css">
+	<link rel="icon" href="../asset/favicon.ico">
+	<link rel="stylesheet" href="css/global.css">
+	<link rel="stylesheet" href="css/store.css">
+	<title>Paintings - SWMQ</title>
 </head>
-
 <body>
-	<!--Header-->
-	<header id="main-header">
-		<div class="container">
-			<div id="brand">
-				<a href='index.html'><img src="images/logo/horizontal.png" alt="Saltwater Murris Quandamooka"> </a>
-			</div>
-			<nav>
-				<ul>
-					<li ><a href='paintings.html'> Paintings</a></li>
-					<li ><a href='merchandise.html'> Merchandise</a></li>
-					<li><a href='artistspage.html'>Artist & Culture</a></li>
-				</ul>
-				<ul>
-					<li class='current'><a href='cart.html'>  Cart</a></li>
-					<li ><a href='userlogin.html'>Login</a></li>
-				</ul>	
-			</nav>
-		</div>
-	</header>
-
-	
-	<!-- Cart Section -->
-	<section id="cart">
-		<div class="container" >
-			
-			<h4> Shopping Cart </h4>
-			
-			<div id="payment-info"> Great choices Bob! <br> * We only support PayPal</div>
-			
-			<div id='subheading' class="row">
-				<div class="column"></div>
-				<div class="column"></div>
-				<div class="column"> Quantity </div>
-				<div class="column">Price</div>
-			</div>
-			
-			
-			<div class="row">
-				<div class="column">
-					<img class='picture'  src="images\swm-photos\whale.jpg">
-				</div>
-				<div class="column">
-					<div class="product-info" style>
-						<div class="name">Blueberry Pomegranate</div>
-						<div class="dimension"> 80 x 80cm</div>
-						<div class="delete"> <a href='#'>Delete </a></div>
-					</div>
-				</div>
-				<div class="column">
-					<div class='quantity'>
-						<select>
-							<option value="1">1</option>
-							<option value="2">2</option>
-							<option value="3">3</option>
-							<option value="4">4</option>
-							<option value="5">5</option>
-							<option value="6">6</option>
-							<option value="7">7</option>
-							<option value="8">8</option>
-							<option value="9">9</option>
-							<option value="10">10</option>
-						  </select>
-					</div>
-				</div>
-				<div class="column"> 
-					<div class="price">$39.99</div>
-				</div>	
-			</div>
-						<div class="row">
-				<div class="column">
-					<img class='picture'  src="images\swm-photos\turtle.jpg">
-				</div>
-				<div class="column">
-					<div class="product-info" style>
-						<div class="name">Iridescent Metalic Goonies</div>
-						<div class="dimension"> 80 x 80cm</div>
-						<div class="delete"> <a href='#'>Delete </a></div>
-					</div>
-				</div>
-				<div class="column">
-					<div class='quantity'>
-						<select>
-							<option value="1">1</option>
-							<option value="2">2</option>
-							<option value="3">3</option>
-							<option value="4">4</option>
-							<option value="5">5</option>
-							<option value="6">6</option>
-							<option value="7">7</option>
-							<option value="8">8</option>
-							<option value="9">9</option>
-							<option value="10">10</option>
-						  </select>
-					</div>
-				</div>
-				<div class="column"> 
-					<div class="price">$39.99</div>
-				</div>	
-			</div>
-						<div class="row">
-				<div class="column">
-					<img class='picture'  src="images\swm-photos\sea.jpg">
-				</div>
-				<div class="column">
-					<div class="product-info" style>
-						<div class="name">Pastel Earthy Pixi Dust</div>
-						<div class="dimension"> 80 x 80cm</div>
-						<div class="delete"> <a href='#'>Delete </a></div>
-					</div>
-				</div>
-				<div class="column">
-					<div class='quantity'>
-						<select>
-							<option value="1">1</option>
-							<option value="2">2</option>
-							<option value="3">3</option>
-							<option value="4">4</option>
-							<option value="5">5</option>
-							<option value="6">6</option>
-							<option value="7">7</option>
-							<option value="8">8</option>
-							<option value="9">9</option>
-							<option value="10">10</option>
-						  </select>
-					</div>
-				</div>
-				<div class="column"> 
-					<div class="price">$39.99</div>
-				</div>	
-			</div>
-			
-			
-			
-			<div class="subtotal"> Subtotal: &nbsp <span id='subtotal'> AU $119.97 </span></div>
-			<form action="">
-				<button class='button-1' >Calculate Shipping</button>
-			</form>
-
-		</div>
-	</section>
-
-	<footer>
-		<p> Saltwater Murris Quandamooka Aboriginal Art Gallery &COPY; 2018</p>
-	</footer>
+<!--Header-->
+    <div class="banner">
+        <img src="../asset/img/vickys_fave.jpg">
+        <a href="paintings.html">
+            <img src="../asset/logo/logo-black.png" alt="logo.jpg">
+            <h1>SWMQ Online Store</h1>
+        </a>
+    </div>
+    <nav id='top-nav'>
+        <div class="container">
+            <a href="signup.html">Login / Register</a>
+            <a href="cart.html">Cart</a>
+            <a href="../home/index.html">About Us</a>
+            <a href="https://www.facebook.com/SWMQuandamooka/">Facebook</a>
+        </div>
+    </nav>
+    <div class="modal">
+        <aside>
+            <div class="container">
+                
+            </div>
+        </aside>
+    </div>
+<!-- Cart Section -->
+<section id="cart">
+    <div class="container" >
+        <h1> Shopping Cart </h1>
+        <div class="row">
+            <div class="column">Image</div>
+            <div class="column">Product Name</div>
+            <div class="column">Quantity</div>
+            <div class="column">Price</div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <img src="https://unsplash.it/100/200">
+            </div>
+            <div class="column">
+                <div class="product-info" style>
+                    <div class="name">Painting Name</div>
+                    <div class="dimension">80 x 80cm</div>
+                    <div class="delete"><a href='#'>Delete </a></div>
+                </div>
+            </div>
+            <div class="column">
+                <div class='quantity'>
+                    <select>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                      </select>
+                </div>
+            </div>
+            <div class="column"> 
+                <div class="price">$65.90</div>
+            </div>	
+        </div>
+        <form>
+            <div class="checkout-info">
+                <strong>Sub-Total:</strong>
+                <span>$65.90</span>
+                <strong>Shipping:</strong>
+                <span>$2.00</span>
+                <strong>Total:</strong>
+                <span>$67.90</span>
+            </div>
+            <input type="submit" class="button-3" value="Checkout"> 
+        </form>
+        <div class="shipping-info">
+            <h3>Shipping Rules</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, reprehenderit, voluptates nemo earum numquam voluptas vel, doloremque at tenetur fugit ad debitis nihil. Nostrum molestiae commodi, vero cumque possimus veritatis.</p>
+        </div>
+    </div>
+</section>
+<footer>
+    <h5> Saltwater Murris Quandamooka Aboriginal Art Gallery &COPY; 2018</h5>
+</footer>
 </body>
 </html>
