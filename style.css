@@ -1,0 +1,558 @@
+/*
+Theme Name: SWMQ Theme
+Theme URI: http://anderson.sttldesign.com
+Author: Anderson Lee
+Author URI: http://anderson.sttldesign.com
+Description: This is a custom theme made specifically for SWMQ Art Gallery.
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: SWMQ
+*/
+
+/*
+* 2018 SWMQ Online Store
+*/ 
+
+/* Global */ 
+@font-face {
+    font-family: HappyMonkey;
+    src: url(asset/font/Happy_Monkey/HappyMonkey-Regular.ttf);
+}
+@font-face {
+    font-family: Roboto;
+    src: url(asset/font/Roboto/Roboto-Regular.ttf);
+}
+:root {
+    --accent: #21626B;
+    --dark: #032527;
+    --light: #79B0B7;
+}
+::selection {
+  background: #fff2a8; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #fff2a8; /* Gecko Browsers */
+}
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    font-family: Roboto, sans-serif;
+}
+a{
+    text-decoration: none;
+    color: var(--accent);
+}
+a:hover{
+    text-decoration: underline;
+}
+.button-3{
+    border: .12em solid var(--accent);
+    font-weight: 700;
+    color: var(--accent);
+    background: linear-gradient(to bottom, white 50%, var(--accent) 50%);
+    background-size: 100% 200%;
+    background-position: top;
+    transition: background .2s;
+}
+.button-3:hover, .button-3.active{
+    background-position: bottom;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+main{
+	display: block;
+	margin: 0 auto;
+	padding: 0 16px;
+	max-width: 1030px;
+	background-color: white;
+}
+.woocommerce{
+	margin: 80px auto;
+}
+
+/* Header */
+.banner{
+    width: 100%; height: 175px;
+    position: relative;
+}
+.banner img{
+    width: 100%; height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+.banner a{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 0; left: 50%;
+    transform: translate(-50%,20%);
+    text-decoration: none;
+    padding: .8em 2em;
+	box-sizing: border-box;
+    box-shadow: 0 0 4px 0 black;
+    background: white;
+    transition: background-color .1s ease-in-out;
+}
+.banner a img{
+    width: 120px;
+    padding-right: 20px;
+}
+.banner .title{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.banner .title h1{
+    margin: 0;
+    white-space: nowrap;
+	font-family: HappyMonkey, sans-serif;
+    font-size: 32px;
+    text-transform: capitalize;
+    text-align: right;
+    color: #333;
+	font-weight: 300;
+}
+.banner a:hover{
+    background-color: #ddd;
+}
+.mobile-header{
+	display:none;
+}
+/* Nav Menu */
+.site-nav{
+	background-color: none;
+	border-top: 40px white solid;
+	border-bottom: 60px white solid;
+}
+.menu-main-menu-container{
+	margin: 0 auto;
+	max-width: 620px;
+	position: relative;
+	z-index:50;
+}
+.menu-main-menu-container ul {
+	display: flex;
+	justify-content: space-around;
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+.menu-main-menu-container ul > li{
+	transition: background .2s ease-in-out;
+}
+.menu-main-menu-container ul a{
+	display: block;
+	padding: 15px;
+	white-space: nowrap;
+	font-weight: 700;
+	color: #333;
+}
+.menu-main-menu-container ul a:hover{
+	text-decoration: none;
+}
+.menu-main-menu-container ul li:hover{
+	background-color: #ddd;
+}
+.menu-main-menu-container ul ul{
+	position: absolute;
+	display: block;
+	background-color: white;
+	box-shadow: 0 0 2px 0;
+	opacity: 0;
+	transform: translateY( 10px );
+	transition: .2s ease-in-out;
+	visibility: hidden;
+}
+.menu-main-menu-container ul li:hover ul{
+	transform: translateY( 0px );
+	opacity: 1;
+	visibility: visible;
+}
+.hamburger{
+	display: none;
+}
+/* Mobile */
+@media screen and (max-width: 600px){
+    .banner{
+		display: none;
+        height: 80px; 
+    }
+	.mobile-header{
+		display: block;
+		width: 100%;
+	}
+	.mobile-header img{
+		width: 100%;
+	}
+	.site-nav{
+		background-color: white;
+	}
+	.menu-main-menu-container{
+		margin: 0;
+		max-width: none;
+	}
+	.menu-main-menu-container ul {
+		display: none;
+		background-color: #ddd;
+	}
+	.menu-main-menu-container ul li:hover{
+		background-color: #ccc;
+	}
+	.menu-main-menu-container ul ul{
+		position: static;
+		box-shadow: none;
+		transform: initial;
+		transition: none;
+	}
+	.hamburger{
+		font-size:24px;
+		padding: .6em;
+		cursor: pointer;
+		display: inline-block;
+		background: #ddd;
+		position:relative;
+		z-index: 10;
+	}	
+}
+/* Footer */
+html {
+    position: relative;
+    min-height: 100%;
+}
+footer{
+	background-color: #303030;
+	color: white;
+}
+footer .container{
+	margin: 0px auto;
+	padding:  2.4em 2em;
+	max-width: 1030px;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	font-size: .8em;
+}
+footer .left, footer .right{
+	width: 40%;
+}
+footer p{
+	line-height: 1.5em;
+	margin: 0;
+}
+footer h4{
+	margin: 0 0 10px;
+}
+footer h5{
+	margin-bottom: 0;
+}
+footer .contact-info p {
+  padding-left: 2em;
+  position: relative;
+}
+footer .contact-info p .fa {
+  position: absolute;
+  left: 0;
+  line-height: 1.5em
+}
+@media screen and (max-width: 696px){
+	footer .container{
+		flex-direction: column;
+		padding-left: 32px;
+		padding-right: 32px;
+	}
+	footer .left, footer .right{
+		width: 100%;
+	}
+	footer .contact-info{
+		margin-bottom: 20px;
+	}
+	footer .right p, footer h5{
+		text-align: left;
+	}
+}
+
+/*
+* About Page: page-about.php
+*/
+#about-page{
+	max-width: none;
+	padding: 0;
+}
+#about-page .restrict{
+    margin: 0 auto;
+    padding: 100px 0;
+    max-width: 1030px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    line-height: 1.5rem;
+	position: relative;
+	z-index: 5;
+}
+#about-page h2{
+    display: inline-block;
+    font-size: 1.8em;
+    padding: .2em .3em;
+    margin: .5em 0;
+    background: black; color: #eee;
+    box-shadow:3.2px 0 0 black,-3.2px 0 0 black;
+	white-space: nowrap;
+    text-transform: uppercase;
+}
+#about-page p{
+	color: #888;
+	text-align: justify;
+}
+/* About Us / Culture */
+#about-page .text-wrap{
+	padding-right: 320px;
+}
+/* #about-page .text-highlight{ */
+    /* padding: 2px 0;  */
+    /* background-color:var(--semi-white); color:#333; */
+    /* box-shadow:3.2px 0 0 var(--semi-white), -3.2px 0 0 var(--semi-white); */
+/* } */
+#about-page #about p, #about-page #culture p{
+	color: white;
+	font-weight: 800;
+}
+#about-page #about, #about-page #culture{
+	background-image: url('asset/img/DeleteBeforeDeploy/gallery.jpg');
+	background-color: linear-gradient(to top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 70%);
+	background-repeat: no-repeat;
+	background-position:  center;
+	background-size: cover;
+}
+#about-page #culture{
+    background-image: url('asset/img/water-view.jpg');;
+}
+#about-page section{
+	position: relative;
+}
+#about-page #about, #about-page #culture{
+	border-top-left-radius:  85% 90px;
+	/* border-top-right-radius:  20% 5%; */
+	/* border-bottom-left-radius:  20% 5%; */
+    border-bottom-right-radius:  85% 90px;
+}
+#about-page #culture{
+	border-bottom-left-radius:  0;
+	border-bottom-right-radius:  0;
+}
+/* #about-page #about:before{ */
+	/* content: ''; */
+    /* position: absolute; */
+    /* top: 0; */
+    /* right: 0; */
+    /* bottom: 0; */
+    /* left: 0; */
+    /* background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, transparent 10%); */
+	/* z-index: 10; */
+/* } */
+#about-page #about:after, #about-page #culture:after{
+    content: '';
+	border-top-left-radius:  85% 90px;
+	/* border-top-right-radius:  20% 5%; */
+    /* border-bottom-left-radius:  20% 5%; */
+    border-bottom-right-radius:  85% 90px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,.5);
+}
+ #about-page #culture:after{
+	border-bottom-left-radius:  0;
+	border-bottom-right-radius:  0;
+ }
+/* Contact Section */
+#about-page #contact .restrict{
+	max-width: 1400px;
+	padding-left: 0;
+	padding-right: 16px;
+	position: relative;
+}
+#about-page #contact img{
+	width: 50%;
+}
+#about-page #contact .contact-info{
+	white-space: nowrap;
+	position: absolute;
+	left: 75%; top: 50%;
+	display: inline-block;
+	transform: translate(-50%, -50%);
+}
+#about-page #contact p {
+  padding-left: 2em;
+  position: relative;
+  font-weight: 800;
+}
+#about-page #contact p .fa {
+  position: absolute;
+  left: 0;
+  line-height: 1.5em
+}
+/* What We Do */
+#about-page #goals .restrict{
+	padding-bottom: 0;
+}
+#about-page #goals ul{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 14px 0 0;
+}
+#about-page #goals ul li{
+    width: 50%;
+	box-sizing: border-box;
+    display: flex;
+	padding: 1rem 0;
+}
+#about-page #goals ul li:nth-child(odd){
+	padding-right: 1rem;
+}
+#about-page #goals ul li:nth-child(even){
+	padding-left: 1rem;
+}
+#about-page #goals li .fa{
+	font-size:30px;
+	margin-right: 20px;
+}
+#about-page #goals li h3{
+	margin-top: 0;
+}
+/* About Page Mobile */
+@media screen and (max-width: 992px) {
+	/* Contact */
+	#about-page #contact img{
+		display: none;
+	}
+	#about-page #contact .restrict{
+		height: auto;
+		padding-left: 16px;
+	}
+	#about-page #contact .contact-info{
+		position: static;
+		transform: initial;
+		white-space: normal;
+		width: 100%;
+	}
+	/* What We Do */
+    #about-page #goals ul li{
+		width: 100%;
+	}
+	#about-page #goals ul li:nth-child(even){
+		padding-left: 0;
+	}
+	/* About / Culture */
+	#about-page section .restrict{
+		padding-left: 16px;
+		padding-right: 16px;
+	}
+	#about-page .text-wrap{
+		padding:0;
+	}
+}
+
+/*
+* Artists Page: page-artists.php
+*/
+#artists .hide{
+  display: none;
+}
+#artists .active{
+  display: block;
+}
+#artists {
+	margin: 0 auto 50px;
+	padding: 0 0;
+}
+#artists .radioBtns{
+	column-count: 4;
+	list-style-type: none;
+	padding: 0;
+	margin-bottom: 50px;
+}
+#artists .content{
+	overflow-y: auto;
+	color: #888;
+}
+#artists .content figure{
+	float: right;
+	max-width: 400px;
+	margin-top: 0;
+	margin-right: 0;
+	order: 2;
+}
+#artists figure img{
+	width: 100%;
+}
+#artists .content .name{
+	float: left;
+	font-size: 2em;
+    font-weight: 700;
+    margin-right: 10px;
+	text-transform: uppercase;
+	color: var(--accent); //#89D4EA
+}
+#artists .content h2{
+	font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 16px;
+	text-transform: uppercase;
+	color: var(--accent); //#89D4EA
+}
+#artists .content p, #artists .content h2{
+	margin-top: 0;
+}
+/* for those that require vertical centering of paragraphs */
+#artists .content .vertical-center{
+	display: flex;
+	align-items: center;
+}
+#artists .content .vertical-center figure{
+	float: none;
+	flex-shrink: 0;
+	max-width: 400px;
+	/*width: 400px;*/
+}
+@media screen and (max-width: 992px) {
+	#artists .radioBtns{
+		column-count: 2;
+	}
+	#artists .radioBtns li {
+		padding-left: 25px;
+		position: relative;
+	}
+	#artists .radioBtns li input{
+		position: absolute;
+		left: 0;
+	}
+	#artists .content div[id^='artist'].active{
+		display: flex;
+		flex-direction: column;
+	}
+	#artists .content figure{
+		float: none;
+		margin: 2rem auto 0;
+	}
+	#artists .content .vertical-center{
+		flex-direction: column;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
