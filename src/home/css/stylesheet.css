@@ -217,7 +217,7 @@ footer {
 
 .title-lockup .logo{
     width: 394px;  height: 388px;
-    background: url(../../asset/img/swmq-logo.png);
+    background: url(../../asset/logo/logo.png);
     background-size: 394px 388px;
 }
 
@@ -252,16 +252,16 @@ footer {
     text-indent:   -2em;
 }
 .title-lockup .icon-pin::before{
-    content: url(../../asset/icon/location.svg);
+    content: url(../../asset/svg/location.svg);
 }
 .title-lockup .icon-time::before{
-    content: url(../../asset/icon/time.svg);
+    content: url(../../asset/svg/time.svg);
 }
 .title-lockup .icon-envelope::before{
-    content: url(../../asset/icon/envelope.svg);
+    content: url(../../asset/svg/envelope.svg);
 }
 .title-lockup .icon-phone::before{
-    content: url(../../asset/icon/phone.svg);
+    content: url(../../asset/svg/phone.svg);
 }
 
 /* buttons */
@@ -289,7 +289,7 @@ footer {
 }
 /* icon svg */
 .title-lockup .link-facebook::before, .title-lockup .link-shop::before{
-    content: url(../../asset/icon/iconmonstr-facebook-black.svg);
+    content: url(../../asset/svg/iconmonstr-facebook-black.svg);
     position: absolute;
     left:8px; top:50%;
     width: 25px;
@@ -297,7 +297,7 @@ footer {
     transition: .2s ease;
 }
 .title-lockup .link-shop::before{
-    content: url(../../asset/icon/location-shopping-black.svg);
+    content: url(../../asset/svg/location-shopping-black.svg);
 }
 /* button text */
 .title-lockup .link-facebook > div, .title-lockup .link-shop > div{
@@ -312,10 +312,10 @@ footer {
 }
 /*change to white icon*/
 .title-lockup .link-facebook:hover::before{
-    content: url(../../asset/icon/iconmonstr-facebook.svg);
+    content: url(../../asset/svg/iconmonstr-facebook.svg);
 }
 .title-lockup .link-shop:hover::before{
-    content: url(../../asset/icon/location-shopping.svg);
+    content: url(../../asset/svg/location-shopping.svg);
 }
 
 
